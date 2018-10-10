@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Triggerer
+  - Grass
+  - Stone
   layers:
   - Default
   - TransparentFX
@@ -26,17 +29,17 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - MovableObject
+  - Ragdoll
+  - RemotePlayer
+  - IgnoreBullets
+  - Enemy
+  - Pickup
+  - Trigger
+  - MovingPlatform
+  - Debris
+  - LocalPlayer
+  - Weapon
   m_SortingLayers:
   - name: Default
     uniqueID: 0
