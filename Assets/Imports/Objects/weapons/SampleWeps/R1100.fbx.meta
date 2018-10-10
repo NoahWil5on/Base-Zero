@@ -1,0 +1,131 @@
+fileFormatVersion: 2
+guid: b6b5bcdec6a4b004ebc912b456c4bd10
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Barrel_Extended_Heavy
+    100002: Body_Default
+    100004: Bolt
+    100006: Pump_Heavy
+    100008: //RootNode
+    100010: Shell_Rack
+    100012: Stock_Combat
+    100014: Stock_Pistol_Grip
+    100016: Trigger
+    400000: Barrel_Extended_Heavy
+    400002: Body_Default
+    400004: Bolt
+    400006: Pump_Heavy
+    400008: //RootNode
+    400010: Shell_Rack
+    400012: Stock_Combat
+    400014: Stock_Pistol_Grip
+    400016: Trigger
+    2100000: R1100_mat
+    2300000: Barrel_Extended_Heavy
+    2300002: Body_Default
+    2300004: Bolt
+    2300006: Pump_Heavy
+    2300008: Shell_Rack
+    2300010: Stock_Combat
+    2300012: Stock_Pistol_Grip
+    2300014: Trigger
+    3300000: Barrel_Extended_Heavy
+    3300002: Body_Default
+    3300004: Bolt
+    3300006: Pump_Heavy
+    3300008: Shell_Rack
+    3300010: Stock_Combat
+    3300012: Stock_Pistol_Grip
+    3300014: Trigger
+    4300000: Bolt
+    4300002: Pump_Heavy
+    4300004: Barrel_Extended_Heavy
+    4300006: Stock_Combat
+    4300008: Stock_Pistol_Grip
+    4300010: Body_Default
+    4300012: Shell_Rack
+    4300014: Trigger
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

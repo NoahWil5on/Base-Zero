@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: 64a59dbcd6fe2394d932a53ea10bcc9b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: FN_FAL_barrel
+    100004: FN_FAL_Body
+    100006: FN_FAL_Bolt
+    100008: FN_FAL_Handguard_long
+    100010: FN_FAL_Magazine
+    100012: FN_FAL_stock
+    100014: FN_FAL_Trigger
+    100016: tape3
+    100018: tape4
+    400000: //RootNode
+    400002: FN_FAL_barrel
+    400004: FN_FAL_Body
+    400006: FN_FAL_Bolt
+    400008: FN_FAL_Handguard_long
+    400010: FN_FAL_Magazine
+    400012: FN_FAL_stock
+    400014: FN_FAL_Trigger
+    400016: tape3
+    400018: tape4
+    2100000: FN_FAL_mat
+    2300000: FN_FAL_barrel
+    2300002: FN_FAL_Body
+    2300004: FN_FAL_Bolt
+    2300006: FN_FAL_Handguard_long
+    2300008: FN_FAL_Magazine
+    2300010: FN_FAL_stock
+    2300012: FN_FAL_Trigger
+    2300014: tape3
+    2300016: tape4
+    3300000: FN_FAL_barrel
+    3300002: FN_FAL_Body
+    3300004: FN_FAL_Bolt
+    3300006: FN_FAL_Handguard_long
+    3300008: FN_FAL_Magazine
+    3300010: FN_FAL_stock
+    3300012: FN_FAL_Trigger
+    3300014: tape3
+    3300016: tape4
+    4300000: FN_FAL_Body
+    4300002: FN_FAL_Magazine
+    4300004: FN_FAL_Trigger
+    4300006: FN_FAL_Bolt
+    4300008: FN_FAL_stock
+    4300010: FN_FAL_Handguard_long
+    4300012: FN_FAL_barrel
+    4300014: tape4
+    4300016: tape3
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
