@@ -542,6 +542,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 1468930875}
   impactEffect: {fileID: 1753577020451914, guid: 83f53c5a9bfdb7f4688f31ffba258ea4,
     type: 2}
+  blood: {fileID: 1833904791764198, guid: ebc21a20ef0f2fa4cb79d7f7d56b8ec3, type: 2}
 --- !u!1 &374889566
 GameObject:
   m_ObjectHideFlags: 0

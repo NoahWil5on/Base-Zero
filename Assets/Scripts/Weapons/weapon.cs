@@ -13,6 +13,7 @@ public class weapon : MonoBehaviour {
     public GameObject fpsController;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
+    public GameObject blood;
 
     private float fireTimer = 100f;
     private Vector3 localPos = new Vector3();
@@ -51,22 +52,18 @@ public class weapon : MonoBehaviour {
 
         RaycastHit hit;
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range)){
-            // while(hit.transform.tag == "Player"){
-            //     Physics.Raycast(hit.point, fpsCam.transform.forward, out hit, range);
-            // }
-            DoBullet(hit);
-        }
-    }
-    void DoBullet(RaycastHit hit){
-        Target target = hit.transform.GetComponent<Target>();
+            Target target = hit.transform.GetComponent<Target>();
+            GameObject myImpact = impactEffect;
             if(target != null){
                 target.TakeDamage(damage);
+                myImpact = blood;
             }
             if(hit.rigidbody != null){
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
             }
-            GameObject impact = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            GameObject impact = Instantiate(myImpact, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impact, 1);
+        }
     }
     Vector3 LerpVector(Vector3 vec1, Vector3 vec2, float amount){
         amount = Mathf.Clamp(amount, 0f, 1f);
