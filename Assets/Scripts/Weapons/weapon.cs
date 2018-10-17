@@ -14,6 +14,7 @@ public class weapon : MonoBehaviour {
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
     public GameObject blood;
+    public GameObject bulletHole;
 
     private float fireTimer = 100f;
     private Vector3 localPos = new Vector3();
@@ -57,6 +58,9 @@ public class weapon : MonoBehaviour {
             if(target != null){
                 target.TakeDamage(damage);
                 myImpact = blood;
+            }else{
+                GameObject bh = Instantiate(bulletHole, hit.point + (hit.normal * .01f), Quaternion.LookRotation(hit.normal));
+                Destroy(bh, 10);
             }
             if(hit.rigidbody != null){
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
