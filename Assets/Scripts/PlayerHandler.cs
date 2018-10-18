@@ -6,8 +6,8 @@ public class PlayerHandler : MonoBehaviour {
 
     //To move player between scenes use "SceneManager.MoveGameObjectToScene(Gameobject, Sceneto);
 
-    private float startingPlayerHealth = 100;
-    public float currentPlayerHealth;
+    private int startingPlayerHealth = 1000;
+    public int currentPlayerHealth;
 
     
     public int currentPlayerAmmo;
@@ -29,7 +29,7 @@ public class PlayerHandler : MonoBehaviour {
 	void Update () {
 		
 	}
-    public void TakeDamage(float damageAmount)
+    public void TakeDamage(int damageAmount)
     {
         currentPlayerHealth -= damageAmount;
     }
