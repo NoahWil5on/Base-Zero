@@ -20,13 +20,15 @@ public class weapon : MonoBehaviour {
     private Vector3 localPos = new Vector3();
     private Quaternion localRot = new Quaternion();
 
-    void Start(){
+    void Start()
+    {
         localPos = gameObject.transform.localPosition;
         localRot = gameObject.transform.localRotation;
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         fireTimer += Time.deltaTime;
 
 		if(Input.GetButton("Fire1") && fireTimer >= 1/fireRate){
@@ -35,7 +37,8 @@ public class weapon : MonoBehaviour {
         }
         ADS();
 	}
-    void ADS(){
+    void ADS()
+    {
         Vector3 myPostion = gameObject.transform.localPosition;
         float myFOV = fpsCam.GetComponent<Camera>().fieldOfView;
         if(Input.GetButton("Fire2")){
@@ -48,28 +51,42 @@ public class weapon : MonoBehaviour {
             fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV,60,.2f);
         }
     }
-    void Shoot(){
-        muzzleFlash.Play();
+    void Shoot()
+    {
 
-        RaycastHit hit;
-        if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range)){
-            Target target = hit.transform.GetComponent<Target>();
-            GameObject myImpact = impactEffect;
-            if(target != null){
-                target.TakeDamage(damage);
-                myImpact = blood;
-            }else{
-                GameObject bh = Instantiate(bulletHole, hit.point + (hit.normal * .01f), Quaternion.LookRotation(hit.normal));
-                Destroy(bh, 10);
+        if(fpsController.GetComponent<PlayerHandler>().currentPlayerAmmo > 0)
+        {
+            muzzleFlash.Play();
+            fpsController.GetComponent<PlayerHandler>().currentPlayerAmmo--;
+            RaycastHit hit;
+            if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+            {
+                Target target = hit.transform.GetComponent<Target>();
+                GameObject myImpact = impactEffect;
+                if (target != null)
+                {
+                    target.TakeDamage(damage);
+                    myImpact = blood;
+                }
+                else
+                {
+                    GameObject bh = Instantiate(bulletHole, hit.point + (hit.normal * .01f), Quaternion.LookRotation(hit.normal));
+                    Destroy(bh, 10);
+                }
+                if (hit.rigidbody != null)
+                {
+                    hit.rigidbody.AddForce(-hit.normal * impactForce);
+                }
+                GameObject impact = Instantiate(myImpact, hit.point, Quaternion.LookRotation(hit.normal));
+                Destroy(impact, 1);
             }
-            if(hit.rigidbody != null){
-                hit.rigidbody.AddForce(-hit.normal * impactForce);
-            }
-            GameObject impact = Instantiate(myImpact, hit.point, Quaternion.LookRotation(hit.normal));
-            Destroy(impact, 1);
         }
+
+        
+        
     }
-    Vector3 LerpVector(Vector3 vec1, Vector3 vec2, float amount){
+    Vector3 LerpVector(Vector3 vec1, Vector3 vec2, float amount)
+    {
         amount = Mathf.Clamp(amount, 0f, 1f);
 
         float x = Mathf.Lerp(vec1.x,vec2.x,amount);

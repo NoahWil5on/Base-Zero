@@ -7,18 +7,40 @@ public class UIHandler : MonoBehaviour {
 
     public GameObject player;
     private int playerHealth;
+    private int playerAmmo;
+    private int playerScraps;
+    private int playerCash;
 
     public Text healthUIText;
+    public Text ammoUIText;
+
+    public GameObject resourceMenuBackground;
+    public Text scrapsText;
+    public Text cashText;
 
 	// Use this for initialization
 	void Start () {
-		
+        resourceMenuBackground.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
+
+        if (Input.GetKey(KeyCode.Tab))
+        {
+            resourceMenuBackground.SetActive(true);
+        }
+        else
+        {
+            resourceMenuBackground.SetActive(false);
+        }
+        playerAmmo = player.GetComponent<PlayerHandler>().currentPlayerAmmo;
         playerHealth = player.GetComponent<PlayerHandler>().currentPlayerHealth;
+        playerScraps = player.GetComponent<PlayerHandler>().currentPlayScraps;
+        playerCash = player.GetComponent<PlayerHandler>().currentPlayerCash;
+
+        ammoUIText.text = (playerAmmo).ToString();
         healthUIText.text = (playerHealth / 10).ToString();
 	}
 }

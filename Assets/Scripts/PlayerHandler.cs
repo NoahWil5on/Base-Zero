@@ -9,11 +9,16 @@ public class PlayerHandler : MonoBehaviour {
     private int startingPlayerHealth = 1000;
     public int currentPlayerHealth;
 
-    
+    public int currentPlayScraps;
+    public int currentPlayerCash;
+
     public int currentPlayerAmmo;
 
 	// Use this for initialization
 	void Start () {
+
+        currentPlayerCash = 0;
+        currentPlayScraps = 0;
 
         //So player doesn't get destroyed on scene change
         DontDestroyOnLoad(this.gameObject);
