@@ -9,47 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1366879470147632}
+  m_RootGameObject: {fileID: 1605623762745990}
   m_IsPrefabAsset: 1
---- !u!1 &1366879470147632
+--- !u!1 &1605623762745990
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4131329119294064}
-  - component: {fileID: 33526879710830380}
-  - component: {fileID: 23124077208594246}
-  - component: {fileID: 65772871150528832}
-  - component: {fileID: 54467294992439992}
-  - component: {fileID: 114154496245127310}
+  - component: {fileID: 4475728086719520}
+  - component: {fileID: 33365454088596342}
+  - component: {fileID: 23970659627713326}
+  - component: {fileID: 65859397777173360}
+  - component: {fileID: 54504257192144228}
+  - component: {fileID: 114105235374138262}
   m_Layer: 0
-  m_Name: AmmoBox
-  m_TagString: NormalAmmo
+  m_Name: ScrapBox
+  m_TagString: ScrapBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4131329119294064
+--- !u!4 &4475728086719520
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1366879470147632}
+  m_GameObject: {fileID: 1605623762745990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.63, y: 5.43, z: -5.62}
-  m_LocalScale: {x: 0.55637, y: 0.27487, z: 1}
+  m_LocalPosition: {x: -7.710662, y: 5.591, z: -10.1811075}
+  m_LocalScale: {x: 0.69363576, y: 0.2747414, z: 0.3040524}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23124077208594246
+--- !u!23 &23970659627713326
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1366879470147632}
+  m_GameObject: {fileID: 1605623762745990}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -59,7 +59,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 86f57d727bcd66c428b44fd7d58e403d, type: 2}
+  - {fileID: 2100000, guid: 60efb502ea712f248baaec435c6ae34e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,46 +79,46 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33526879710830380
+--- !u!33 &33365454088596342
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1366879470147632}
+  m_GameObject: {fileID: 1605623762745990}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54467294992439992
+--- !u!54 &54504257192144228
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1366879470147632}
+  m_GameObject: {fileID: 1605623762745990}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65772871150528832
+--- !u!65 &65859397777173360
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1366879470147632}
+  m_GameObject: {fileID: 1605623762745990}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114154496245127310
+--- !u!114 &114105235374138262
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1366879470147632}
+  m_GameObject: {fileID: 1605623762745990}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb63e12cedd600740a6c3dcae86b58e5, type: 3}
@@ -127,3 +127,4 @@ MonoBehaviour:
   player: {fileID: 0}
   normalAmmoAmount: 0
   scrapBoxAmount: 0
+  smallCashAmount: 0

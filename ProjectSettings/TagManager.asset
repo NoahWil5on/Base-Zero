@@ -8,6 +8,8 @@ TagManager:
   - Grass
   - Stone
   - NormalAmmo
+  - ScrapBox
+  - SmallCash
   layers:
   - Default
   - TransparentFX

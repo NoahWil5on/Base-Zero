@@ -42,5 +42,8 @@ public class UIHandler : MonoBehaviour {
 
         ammoUIText.text = (playerAmmo).ToString();
         healthUIText.text = (playerHealth / 10).ToString();
+        scrapsText.text = (playerScraps).ToString();
+        cashText.text = (playerCash).ToString();
+
 	}
 }
