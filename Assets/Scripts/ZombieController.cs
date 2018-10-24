@@ -52,6 +52,11 @@ public class ZombieController : MonoBehaviour {
             player.GetComponent<FirstPersonController>().m_RunSpeed = 5f;
 
         }
+        else
+        {
+            player.GetComponent<FirstPersonController>().m_WalkSpeed = 5f;
+            player.GetComponent<FirstPersonController>().m_RunSpeed = 10f;
+        }
         if (timer >= timeBetweenAttacks && playerInRange && playerHealth > 0)
         {
 

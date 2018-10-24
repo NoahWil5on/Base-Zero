@@ -6,10 +6,10 @@ public class PlayerHandler : MonoBehaviour {
 
     //To move player between scenes use "SceneManager.MoveGameObjectToScene(Gameobject, Sceneto);
 
-    private int startingPlayerHealth = 1000;
+    public int startingPlayerHealth = 1000;
     public int currentPlayerHealth;
 
-    public int currentPlayScraps;
+    public int currentPlayScraps = 0;
     public int currentPlayerCash;
 
     public int currentPlayerAmmo;
