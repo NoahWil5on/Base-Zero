@@ -884,6 +884,9 @@ MonoBehaviour:
   range: 200
   fireRate: 5
   impactForce: 200
+  magSize: 10
+  currentAmmoCount: 0
+  reloadTime: 1
   currentAmmoType: AR
   fpsCam: {fileID: 1990563055}
   fpsController: {fileID: 405401753}

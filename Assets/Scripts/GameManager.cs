@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour {
 
     void Start(){
         weaponAmmo.Add("LMG", 0);
-        weaponAmmo.Add("AR", 200);
+        weaponAmmo.Add("AR", 20);
     }
     public int GetPlayerCash(){
         return playerCash;
@@ -29,5 +29,6 @@ public class GameManager : MonoBehaviour {
     }
     public void AddAmmo(string ammoType, int ammoCount){
         weaponAmmo[ammoType] += ammoCount;
+        Mathf.Clamp(weaponAmmo[ammoType], 0, 2000);
     }
 }
