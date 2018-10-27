@@ -23,6 +23,10 @@ public class PlayerHandler : MonoBehaviour {
     public int GetHealth(){
         return currentPlayerHealth;
     }
+    public Transform getPlayerPosition()
+    {
+        return this.transform;
+    }
     public void TakeDamage(int damageAmount)
     {
         currentPlayerHealth -= damageAmount;

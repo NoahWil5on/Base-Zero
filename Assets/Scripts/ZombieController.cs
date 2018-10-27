@@ -74,4 +74,5 @@ public class ZombieController : MonoBehaviour {
             player.GetComponent<PlayerHandler>().TakeDamage(attackDamage);
         }
     }
+   
 }

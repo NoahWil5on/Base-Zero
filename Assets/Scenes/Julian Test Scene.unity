@@ -405,6 +405,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 57.218002, z: 0}
+--- !u!1 &243368258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243368260}
+  - component: {fileID: 243368259}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &243368259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 243368258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6568916fd9fc8414d882f50c4a3a0b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &243368260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 243368258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.4827163, y: 13.82, z: 3.6722164}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &373912558
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +872,7 @@ MonoBehaviour:
   normalAmmoAmount: 0
   scrapBoxAmount: 0
   smallCashAmount: 0
+  ammoType: 
 --- !u!54 &540006425
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1009,8 +1050,10 @@ MonoBehaviour:
   range: 200
   fireRate: 5
   impactForce: 200
+  currentAmmoType: AR
   fpsCam: {fileID: 1238857929}
   fpsController: {fileID: 1343306157}
+  gameManager: {fileID: 243368258}
   muzzleFlash: {fileID: 2855768}
   impactEffect: {fileID: 1753577020451914, guid: 83f53c5a9bfdb7f4688f31ffba258ea4,
     type: 2}
@@ -2041,10 +2084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingPlayerHealth: 1000
-  currentPlayerHealth: 0
-  currentPlayScraps: 0
-  currentPlayerCash: 0
-  currentPlayerAmmo: 0
+  gameManager: {fileID: 243368258}
 --- !u!1001 &1356734681
 Prefab:
   m_ObjectHideFlags: 0
@@ -2277,6 +2317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1343306157}
+  gameManager: {fileID: 243368258}
   healthUIText: {fileID: 1447978025}
   ammoUIText: {fileID: 689801510}
   resourceMenuBackground: {fileID: 1235717305}
@@ -2312,8 +2353,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0b328359b2e18e4cbe154bf22d19390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerRef: {fileID: 1343306157}
   enemyType: {fileID: 1691537261510704, guid: b095b487b695f9a49b6ab17abe9a99ba, type: 2}
-  timeBetweenSpawns: 2
+  timeBetweenSpawns: 3
 --- !u!65 &1590318614
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpawnHandler : MonoBehaviour {
 
+    public GameObject playerRef;
+
     public GameObject enemyType;
     public float timeBetweenSpawns = 2f;
 
@@ -26,9 +28,19 @@ public class SpawnHandler : MonoBehaviour {
     }
     IEnumerator Spawn()
     {
-        Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
-        yield return new WaitForSeconds(timeBetweenSpawns);
-        Debug.Log("lalalala");
-        coroutineFired = false;
+        if(Vector3.Dot(playerRef.transform.forward, (this.transform.position - playerRef.transform.position).normalized) < 0f)
+        {
+            Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
+            yield return new WaitForSeconds(timeBetweenSpawns);
+            Debug.Log("lalalala");
+            coroutineFired = false;
+        }
+        else
+        {
+            Debug.Log("FACING!!!");
+            coroutineFired = false;
+
+        }
+
     }
 }
