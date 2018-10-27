@@ -8,6 +8,9 @@ public class weapon : MonoBehaviour {
     public float range = 200f;
     public float fireRate = 5f;
     public float impactForce = 200f;
+    public int magSize = 10;
+    public int currentAmmoCount = 0;
+    public float reloadTime = 1;
 
     public string currentAmmoType = "AR";
 
@@ -20,6 +23,8 @@ public class weapon : MonoBehaviour {
     public GameObject bulletHole;
 
     private float fireTimer = 100f;
+    private float reloadTimer = 100f;
+
     private Vector3 localPos = new Vector3();
     private Quaternion localRot = new Quaternion();
 
@@ -33,10 +38,16 @@ public class weapon : MonoBehaviour {
 	void Update ()
     {
         fireTimer += Time.deltaTime;
+        reloadTimer += Time.deltaTime;
 
+        if(reloadTimer < reloadTime) return;
+        
 		if(Input.GetButton("Fire1") && fireTimer >= 1/fireRate){
             Shoot();
             fireTimer = 0;
+        }
+        if(Input.GetKey(KeyCode.R)){
+            Reload();
         }
         ADS();
 	}
@@ -56,37 +67,44 @@ public class weapon : MonoBehaviour {
     }
     void Shoot()
     {
+        //gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType)
+        if(currentAmmoCount <= 0) return;
 
-        if(gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType) > 0)
+        muzzleFlash.Play();
+        currentAmmoCount --;
+        RaycastHit hit;
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            muzzleFlash.Play();
-            gameManager.GetComponent<GameManager>().AddAmmo(currentAmmoType, -1);
-            RaycastHit hit;
-            if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+            Target target = hit.transform.GetComponent<Target>();
+            GameObject myImpact = impactEffect;
+            if (target != null)
             {
-                Target target = hit.transform.GetComponent<Target>();
-                GameObject myImpact = impactEffect;
-                if (target != null)
-                {
-                    target.TakeDamage(damage);
-                    myImpact = blood;
-                }
-                else
-                {
-                    GameObject bh = Instantiate(bulletHole, hit.point + (hit.normal * .01f), Quaternion.LookRotation(hit.normal));
-                    Destroy(bh, 10);
-                }
-                if (hit.rigidbody != null)
-                {
-                    hit.rigidbody.AddForce(-hit.normal * impactForce);
-                }
-                GameObject impact = Instantiate(myImpact, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy(impact, 1);
+                target.TakeDamage(damage);
+                myImpact = blood;
             }
-        }
+            else
+            {
+                GameObject bh = Instantiate(bulletHole, hit.point + (hit.normal * .01f), Quaternion.LookRotation(hit.normal));
+                Destroy(bh, 10);
+            }
+            if (hit.rigidbody != null)
+            {
+                hit.rigidbody.AddForce(-hit.normal * impactForce);
+            }
+            GameObject impact = Instantiate(myImpact, hit.point, Quaternion.LookRotation(hit.normal));
+            Destroy(impact, 1);
+        }    
+    }
+    void Reload(){
+        if(currentAmmoCount == magSize) return;
+        int ammoCount = gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType);
+        if(ammoCount == 0) return;
 
-        
-        
+        int ammoChange = Mathf.Min((magSize - currentAmmoCount), ammoCount);
+        currentAmmoCount += ammoChange;
+        gameManager.GetComponent<GameManager>().AddAmmo(currentAmmoType, -ammoChange);
+    
+        reloadTimer = 0;
     }
     Vector3 LerpVector(Vector3 vec1, Vector3 vec2, float amount)
     {
