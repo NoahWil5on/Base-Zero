@@ -9,8 +9,11 @@ public class weapon : MonoBehaviour {
     public float fireRate = 5f;
     public float impactForce = 200f;
 
+    public string currentAmmoType = "AR";
+
     public Camera fpsCam;
     public GameObject fpsController;
+    public GameObject gameManager;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
     public GameObject blood;
@@ -54,10 +57,10 @@ public class weapon : MonoBehaviour {
     void Shoot()
     {
 
-        if(fpsController.GetComponent<PlayerHandler>().currentPlayerAmmo > 0)
+        if(gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType) > 0)
         {
             muzzleFlash.Play();
-            fpsController.GetComponent<PlayerHandler>().currentPlayerAmmo--;
+            gameManager.GetComponent<GameManager>().AddAmmo(currentAmmoType, -1);
             RaycastHit hit;
             if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
             {

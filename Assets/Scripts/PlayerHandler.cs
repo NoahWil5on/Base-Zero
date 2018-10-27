@@ -7,35 +7,43 @@ public class PlayerHandler : MonoBehaviour {
     //To move player between scenes use "SceneManager.MoveGameObjectToScene(Gameobject, Sceneto);
 
     public int startingPlayerHealth = 1000;
-    public int currentPlayerHealth;
-
-    public int currentPlayScraps = 0;
-    public int currentPlayerCash;
-
-    public int currentPlayerAmmo;
+    private int currentPlayerHealth;
+    public GameObject gameManager;
 
 	// Use this for initialization
 	void Start () {
-
-        currentPlayerCash = 0;
-        currentPlayScraps = 0;
 
         //So player doesn't get destroyed on scene change
         DontDestroyOnLoad(this.gameObject);
 
         //Set starting health to 100 and ammo to 0
         currentPlayerHealth = startingPlayerHealth;
-        currentPlayerAmmo = 0;
-		
+	}
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public int GetHealth(){
+        return currentPlayerHealth;
+    }
     public void TakeDamage(int damageAmount)
     {
         currentPlayerHealth -= damageAmount;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "NormalAmmo")
+        {            
+            gameManager.GetComponent<GameManager>().AddAmmo("AR", other.GetComponent<PickupHandler>().normalAmmoAmount);
+            Destroy(other.gameObject);            
+        }
+        else if(other.gameObject.tag == "ScrapBox")
+        {
+
+            gameManager.GetComponent<GameManager>().AddScraps(other.GetComponent<PickupHandler>().scrapBoxAmount);
+            Destroy(other.gameObject);            
+        }
+        else if (other.gameObject.tag == "SmallCash")
+        {
+            gameManager.GetComponent<GameManager>().AddCash(other.GetComponent<PickupHandler>().smallCashAmount);
+            Destroy(other.gameObject);            
+        }
     }
 }

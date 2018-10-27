@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class UIHandler : MonoBehaviour {
 
     public GameObject player;
+    public GameObject gameManager;
     private int playerHealth;
     private int playerAmmo;
     private int playerScraps;
@@ -35,10 +36,10 @@ public class UIHandler : MonoBehaviour {
         {
             resourceMenuBackground.SetActive(false);
         }
-        playerAmmo = player.GetComponent<PlayerHandler>().currentPlayerAmmo;
-        playerHealth = player.GetComponent<PlayerHandler>().currentPlayerHealth;
-        playerScraps = player.GetComponent<PlayerHandler>().currentPlayScraps;
-        playerCash = player.GetComponent<PlayerHandler>().currentPlayerCash;
+        playerAmmo = gameManager.GetComponent<GameManager>().CheckAmmo("AR");
+        playerHealth = player.GetComponent<PlayerHandler>().GetHealth();;
+        playerScraps = gameManager.GetComponent<GameManager>().GetPlayerScraps();
+        playerCash = gameManager.GetComponent<GameManager>().GetPlayerCash();
 
         ammoUIText.text = (playerAmmo).ToString();
         healthUIText.text = (playerHealth / 10).ToString();

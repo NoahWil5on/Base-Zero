@@ -21,7 +21,7 @@ public class ZombieController : MonoBehaviour {
 
     private void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
         zombie.stoppingDistance = 2f;
     }
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class ZombieController : MonoBehaviour {
     }
     void Update () {
 
-        int playerHealth = player.GetComponent<PlayerHandler>().currentPlayerHealth;
+        int playerHealth = player.GetComponent<PlayerHandler>().GetHealth();
 
         
         timer += Time.deltaTime;
@@ -69,7 +69,7 @@ public class ZombieController : MonoBehaviour {
 	}
     private void Attack()
     {
-        if(player.GetComponent<PlayerHandler>().currentPlayerHealth > 0)
+        if(player.GetComponent<PlayerHandler>().GetHealth() > 0)
         {
             player.GetComponent<PlayerHandler>().TakeDamage(attackDamage);
         }
