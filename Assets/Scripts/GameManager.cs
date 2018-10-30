@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour {
         playerCash += cash;
     }
     public int CheckAmmo(string ammoType){
+
+
         return weaponAmmo[ammoType];
     }
     public void AddAmmo(string ammoType, int ammoCount){

@@ -10,7 +10,12 @@ public class PlayerHandler : MonoBehaviour {
     private int currentPlayerHealth;
     public GameObject gameManager;
 
-	// Use this for initialization
+    // Use this for initialization
+
+
+
+    //QUEST STUFF
+
 	void Start () {
 
         //So player doesn't get destroyed on scene change

@@ -12,7 +12,8 @@ public class SpawnHandler : MonoBehaviour {
     private bool coroutineFired = false;
 	// Use this for initialization
 	void Start () {
-		
+
+        playerRef = GameObject.FindGameObjectWithTag("Player");
 	}
 
     // Update is called once per frame

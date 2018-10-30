@@ -37,6 +37,8 @@ public class weapon : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        currentAmmoCount = gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType);
+
         fireTimer += Time.deltaTime;
         reloadTimer += Time.deltaTime;
 
@@ -67,8 +69,10 @@ public class weapon : MonoBehaviour {
     }
     void Shoot()
     {
-        //gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType)
-        if(currentAmmoCount <= 0) return;
+       if(currentAmmoCount <= 0) return;
+
+
+       gameManager.GetComponent<GameManager>().AddAmmo(currentAmmoType, -1);
 
         muzzleFlash.Play();
         currentAmmoCount --;
