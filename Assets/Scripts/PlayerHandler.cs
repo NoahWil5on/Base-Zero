@@ -9,6 +9,8 @@ public class PlayerHandler : MonoBehaviour {
     public int startingPlayerHealth = 1000;
     private int currentPlayerHealth;
     public GameObject gameManager;
+    public GameObject[] playerWeapons = new GameObject[3];
+    public int currentWeapon = 0;
 
     // Use this for initialization
 
@@ -17,6 +19,11 @@ public class PlayerHandler : MonoBehaviour {
     //QUEST STUFF
 
 	void Start () {
+        for(int i = 0; i < playerWeapons.Length; i++){
+            if(!playerWeapons[i]) continue;
+            playerWeapons[i].SetActive(false);
+        }
+        playerWeapons[currentWeapon].SetActive(true);
 
         //So player doesn't get destroyed on scene change
         DontDestroyOnLoad(this.gameObject);
@@ -24,7 +31,23 @@ public class PlayerHandler : MonoBehaviour {
         //Set starting health to 100 and ammo to 0
         currentPlayerHealth = startingPlayerHealth;
 	}
+    void Update(){
+        if(Input.GetKeyDown("1")){
+            SwitchWeapon(0);
+        }else if(Input.GetKeyDown("2")){
+            SwitchWeapon(1);
+        }else if(Input.GetKeyDown("3")){
+            SwitchWeapon(2);
+        }
+    }
+    private void SwitchWeapon(int weaponNumber){
+        if(currentWeapon == weaponNumber ||
+        !playerWeapons[weaponNumber]) return;
 
+        playerWeapons[currentWeapon].SetActive(false);
+        currentWeapon = weaponNumber;
+        playerWeapons[currentWeapon].SetActive(true);
+    }
     public int GetHealth(){
         return currentPlayerHealth;
     }

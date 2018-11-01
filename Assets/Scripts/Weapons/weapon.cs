@@ -37,7 +37,7 @@ public class weapon : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        currentAmmoCount = gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType);
+        //currentAmmoCount = gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType);
 
         fireTimer += Time.deltaTime;
         reloadTimer += Time.deltaTime;
