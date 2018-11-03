@@ -5,16 +5,20 @@ using UnityEngine.UI;
 
 public class Quest : MonoBehaviour
 {
-
+    //InProgress or Completed
     private string questStatus;
 
     public string questName;
 
-    public Text uiText;
+    public string questText;
+    private Text UITextRef;
 
     // Use this for initialization
     void Start()
     {
+        
+        questStatus = "InProgress";
+        UITextRef = (Text)FindObjectOfType(typeof(Text));
         this.transform.gameObject.SetActive(false);
 
     }
@@ -22,7 +26,16 @@ public class Quest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(questStatus == "InProgress")
+        {
+            UITextRef.text = questText;
 
+        }
+        else if(questStatus == "Completed")
+        {
+            UITextRef.text = "Quest Completed, Return to HQ";
+
+        }
     }
     public string getQuestStatus()
     {
