@@ -37,7 +37,7 @@ public class UIHandler : MonoBehaviour {
             resourceMenuBackground.SetActive(false);
         }
         playerAmmo = gameManager.GetComponent<GameManager>().CheckAmmo("AR");
-        playerHealth = player.GetComponent<PlayerHandler>().GetHealth();;
+        playerHealth = player.GetComponent<PlayerHandler>().GetHealth();
         playerScraps = gameManager.GetComponent<GameManager>().GetPlayerScraps();
         playerCash = gameManager.GetComponent<GameManager>().GetPlayerCash();
 

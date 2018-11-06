@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1647,7 +1647,7 @@ MonoBehaviour:
   range: 200
   fireRate: 5
   impactForce: 200
-  magSize: 10
+  magSize: 30
   currentAmmoCount: 0
   reloadTime: 1
   currentAmmoType: AR
@@ -7785,7 +7785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6568916fd9fc8414d882f50c4a3a0b51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingAmmo: 500
+  startingAmmo: 50
 --- !u!4 &1103410097
 Transform:
   m_ObjectHideFlags: 0

@@ -72,7 +72,7 @@ public class weapon : MonoBehaviour {
        if(currentAmmoCount <= 0) return;
 
 
-       gameManager.GetComponent<GameManager>().AddAmmo(currentAmmoType, -1);
+       //gameManager.GetComponent<GameManager>().AddAmmo(currentAmmoType, -1);
 
         muzzleFlash.Play();
         currentAmmoCount --;
