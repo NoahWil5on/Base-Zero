@@ -8,11 +8,12 @@ public class QuestManager : MonoBehaviour {
     public GameObject[] trainyardQuests;
 
     public GameObject[] currentQuests = new GameObject[3];
+
+    private int questIndex = 0;
 	// Use this for initialization
 	void Start () {
 
 
-        currentQuests[0].SetActive(true);
         //for(int i = 0; i < 3; i++)
         //{
 
@@ -22,11 +23,22 @@ public class QuestManager : MonoBehaviour {
         //}
 
 
+
+        currentQuests[0].SetActive(true);
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        currentQuests[questIndex].SetActive(true);
+        string curQuestStatus = currentQuests[questIndex].GetComponent<Quest>().getQuestStatus();
+        if (curQuestStatus == "Completed")
+        {
+            currentQuests[questIndex].SetActive(true);
+            questIndex++;
+        }
 		
+
 	}
 }
