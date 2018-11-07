@@ -22,6 +22,8 @@ public class QuestItemHandler : MonoBehaviour {
         if(other.gameObject.tag == "Player")
         {
             associatedQuestObject.GetComponent<Quest>().changeQuestStatus("Completed");
+            Destroy(this.gameObject);
         }
     }
+    
 }

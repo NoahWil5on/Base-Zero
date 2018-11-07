@@ -12,6 +12,7 @@ TagManager:
   - SmallCash
   - EnemySpawner
   - ObjectiveText
+  - curObjective
   layers:
   - Default
   - TransparentFX
