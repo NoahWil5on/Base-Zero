@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: f971b19c267d2b043a64a835c5941bd2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Axle_Front
+    100002: Axle_Rear
+    100004: Body
+    100006: Bumper
+    100008: Door_Front_Left
+    100010: Door_Front_Right
+    100012: Door_Rear_Left
+    100014: Door_Rear_Right
+    100016: //RootNode
+    100018: Seat_Back_Left
+    100020: Seat_Back_Right
+    100022: Seat_Front_Left
+    100024: Seat_Front_Right
+    100026: Steering_Wheel
+    100028: Trunk_Left
+    100030: Trunk_Lower
+    100032: Trunk_Right
+    100034: Trunk_Upper
+    100036: Trunk_Upper 1
+    100038: Turret_Cover_Left
+    100040: Turret_Cover_right
+    100042: Turret_Ring
+    100044: Wheel_Back_Left
+    100046: Wheel_Back_Right
+    100048: Wheel_Front_Left
+    100050: Wheel_Front_Right
+    100052: Window_Left
+    100054: Window_Right
+    400000: Axle_Front
+    400002: Axle_Rear
+    400004: Body
+    400006: Bumper
+    400008: Door_Front_Left
+    400010: Door_Front_Right
+    400012: Door_Rear_Left
+    400014: Door_Rear_Right
+    400016: //RootNode
+    400018: Seat_Back_Left
+    400020: Seat_Back_Right
+    400022: Seat_Front_Left
+    400024: Seat_Front_Right
+    400026: Steering_Wheel
+    400028: Trunk_Left
+    400030: Trunk_Lower
+    400032: Trunk_Right
+    400034: Trunk_Upper
+    400036: Trunk_Upper 1
+    400038: Turret_Cover_Left
+    400040: Turret_Cover_right
+    400042: Turret_Ring
+    400044: Wheel_Back_Left
+    400046: Wheel_Back_Right
+    400048: Wheel_Front_Left
+    400050: Wheel_Front_Right
+    400052: Window_Left
+    400054: Window_Right
+    2100000: HMMWV_mat
+    2300000: Axle_Front
+    2300002: Axle_Rear
+    2300004: Body
+    2300006: Bumper
+    2300008: Door_Front_Left
+    2300010: Door_Front_Right
+    2300012: Door_Rear_Left
+    2300014: Door_Rear_Right
+    2300016: Seat_Back_Left
+    2300018: Seat_Back_Right
+    2300020: Seat_Front_Left
+    2300022: Seat_Front_Right
+    2300024: Steering_Wheel
+    2300026: Trunk_Left
+    2300028: Trunk_Lower
+    2300030: Trunk_Right
+    2300032: Trunk_Upper 1
+    2300034: Turret_Cover_Left
+    2300036: Turret_Cover_right
+    2300038: Turret_Ring
+    2300040: Wheel_Back_Left
+    2300042: Wheel_Back_Right
+    2300044: Wheel_Front_Left
+    2300046: Wheel_Front_Right
+    2300048: Window_Left
+    2300050: Window_Right
+    3300000: Axle_Front
+    3300002: Axle_Rear
+    3300004: Body
+    3300006: Bumper
+    3300008: Door_Front_Left
+    3300010: Door_Front_Right
+    3300012: Door_Rear_Left
+    3300014: Door_Rear_Right
+    3300016: Seat_Back_Left
+    3300018: Seat_Back_Right
+    3300020: Seat_Front_Left
+    3300022: Seat_Front_Right
+    3300024: Steering_Wheel
+    3300026: Trunk_Left
+    3300028: Trunk_Lower
+    3300030: Trunk_Right
+    3300032: Trunk_Upper 1
+    3300034: Turret_Cover_Left
+    3300036: Turret_Cover_right
+    3300038: Turret_Ring
+    3300040: Wheel_Back_Left
+    3300042: Wheel_Back_Right
+    3300044: Wheel_Front_Left
+    3300046: Wheel_Front_Right
+    3300048: Window_Left
+    3300050: Window_Right
+    4300000: Trunk_Lower
+    4300002: Turret_Cover_right
+    4300004: Turret_Cover_Left
+    4300006: Turret_Ring
+    4300008: Axle_Front
+    4300010: Bumper
+    4300012: Steering_Wheel
+    4300014: Body
+    4300016: Seat_Front_Right
+    4300018: Seat_Back_Left
+    4300020: Seat_Back_Right
+    4300022: Seat_Front_Left
+    4300024: Axle_Rear
+    4300026: Window_Left
+    4300028: Window_Right
+    4300030: Door_Front_Right
+    4300032: Door_Rear_Right
+    4300034: Door_Rear_Left
+    4300036: Door_Front_Left
+    4300038: Wheel_Front_Right
+    4300040: Wheel_Back_Left
+    4300042: Wheel_Back_Right
+    4300044: Wheel_Front_Left
+    4300046: Trunk_Left
+    4300048: Trunk_Upper
+    4300050: Trunk_Right
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
