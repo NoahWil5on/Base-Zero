@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: e0e5419ea05bac84198681f3a5a8a02b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Barrel_Saiga
+    100002: Barrel_Saiga_Short
+    100004: Barrels
+    100006: Body
+    100008: Bolt
+    100010: Grip
+    100012: Grip_Polymer
+    100014: Handguard
+    100016: Handguard_Shotgun
+    100018: Handguard_Shotgun_Polymer
+    100020: Ironsights
+    100022: Kobra
+    100024: Magazine_Shotgun_Drum
+    100026: Magazine_Shotgun_Extended
+    100028: Magazine_Shotgun_Standard
+    100030: Magazines
+    100032: Polymer
+    100034: Receiver_Magazine_Release
+    100036: //RootNode
+    100038: Shotgun
+    100040: Sights
+    100042: Stock_full_Polymer
+    100044: Stock_Skeleton
+    100046: Stocks
+    100048: Trigger
+    100050: Wood
+    400000: Barrel_Saiga
+    400002: Barrel_Saiga_Short
+    400004: Barrels
+    400006: Body
+    400008: Bolt
+    400010: Grip
+    400012: Grip_Polymer
+    400014: Handguard
+    400016: Handguard_Shotgun
+    400018: Handguard_Shotgun_Polymer
+    400020: Ironsights
+    400022: Kobra
+    400024: Magazine_Shotgun_Drum
+    400026: Magazine_Shotgun_Extended
+    400028: Magazine_Shotgun_Standard
+    400030: Magazines
+    400032: Polymer
+    400034: Receiver_Magazine_Release
+    400036: //RootNode
+    400038: Shotgun
+    400040: Sights
+    400042: Stock_full_Polymer
+    400044: Stock_Skeleton
+    400046: Stocks
+    400048: Trigger
+    400050: Wood
+    2100000: AK_Platform_Body_mat
+    2100002: AK_Platforms_Magazine_mat
+    2100004: AK_Platform_Guards_mat
+    2100006: AK_Platform_Guards_Plymer_mat
+    2100008: AK_Platform_Accesories_mat
+    2300000: Barrel_Saiga
+    2300002: Barrel_Saiga_Short
+    2300004: Body
+    2300006: Bolt
+    2300008: Grip
+    2300010: Grip_Polymer
+    2300012: Handguard_Shotgun
+    2300014: Handguard_Shotgun_Polymer
+    2300016: Ironsights
+    2300018: Kobra
+    2300020: Magazine_Shotgun_Drum
+    2300022: Magazine_Shotgun_Extended
+    2300024: Magazine_Shotgun_Standard
+    2300026: Receiver_Magazine_Release
+    2300028: Stock_full_Polymer
+    2300030: Stock_Skeleton
+    2300032: Trigger
+    3300000: Barrel_Saiga
+    3300002: Barrel_Saiga_Short
+    3300004: Body
+    3300006: Bolt
+    3300008: Grip
+    3300010: Grip_Polymer
+    3300012: Handguard_Shotgun
+    3300014: Handguard_Shotgun_Polymer
+    3300016: Ironsights
+    3300018: Kobra
+    3300020: Magazine_Shotgun_Drum
+    3300022: Magazine_Shotgun_Extended
+    3300024: Magazine_Shotgun_Standard
+    3300026: Receiver_Magazine_Release
+    3300028: Stock_full_Polymer
+    3300030: Stock_Skeleton
+    3300032: Trigger
+    4300000: Body
+    4300002: Ironsights
+    4300004: Trigger
+    4300006: Bolt
+    4300008: Receiver_Magazine_Release
+    4300010: Barrel_Saiga
+    4300012: Barrel_Saiga_Short
+    4300014: Magazine_Shotgun_Standard
+    4300016: Magazine_Shotgun_Extended
+    4300018: Magazine_Shotgun_Drum
+    4300020: Handguard_Shotgun
+    4300022: Handguard_Shotgun_Polymer
+    4300024: Kobra
+    4300026: Grip
+    4300028: Stock_Skeleton
+    4300030: Grip_Polymer
+    4300032: Stock_full_Polymer
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

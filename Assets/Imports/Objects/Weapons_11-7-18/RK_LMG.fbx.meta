@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 44762f8d4f110a944bf07c51748bada0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Barrel_Long
+    100002: Barrels
+    100004: Bipod_Leg_Left
+    100006: Bipod_Leg_Right
+    100008: Bipod_mount
+    100010: Bipod_Swivel
+    100012: Body
+    100014: Bolt
+    100016: Grip
+    100018: Grip_Polymer
+    100020: Handguard
+    100022: Handguard_Heavy
+    100024: Handguard_Heavy_Polymer
+    100026: Ironsights
+    100028: Kobra
+    100030: Magazine_Drum
+    100032: Magazine_Extended_Bakelite
+    100034: Magazines
+    100036: Polymer
+    100038: Receiver_Magazine_Release
+    100040: //RootNode
+    100042: Sights
+    100044: Stock_Heavy
+    100046: Stock_Heavy_Polymer
+    100048: Stocks
+    100050: Trigger
+    100052: Wood
+    400000: Barrel_Long
+    400002: Barrels
+    400004: Bipod_Leg_Left
+    400006: Bipod_Leg_Right
+    400008: Bipod_mount
+    400010: Bipod_Swivel
+    400012: Body
+    400014: Bolt
+    400016: Grip
+    400018: Grip_Polymer
+    400020: Handguard
+    400022: Handguard_Heavy
+    400024: Handguard_Heavy_Polymer
+    400026: Ironsights
+    400028: Kobra
+    400030: Magazine_Drum
+    400032: Magazine_Extended_Bakelite
+    400034: Magazines
+    400036: Polymer
+    400038: Receiver_Magazine_Release
+    400040: //RootNode
+    400042: Sights
+    400044: Stock_Heavy
+    400046: Stock_Heavy_Polymer
+    400048: Stocks
+    400050: Trigger
+    400052: Wood
+    2100000: AK_Platform_Body_mat
+    2100002: AK_Platforms_Magazine_mat
+    2100004: AK_Platform_Guards_mat
+    2100006: AK_Platform_Guards_Plymer_mat
+    2100008: AK_Platform_Accesories_mat
+    2300000: Barrel_Long
+    2300002: Bipod_Leg_Left
+    2300004: Bipod_Leg_Right
+    2300006: Bipod_mount
+    2300008: Bipod_Swivel
+    2300010: Body
+    2300012: Bolt
+    2300014: Grip
+    2300016: Grip_Polymer
+    2300018: Handguard_Heavy
+    2300020: Handguard_Heavy_Polymer
+    2300022: Ironsights
+    2300024: Kobra
+    2300026: Magazine_Drum
+    2300028: Magazine_Extended_Bakelite
+    2300030: Receiver_Magazine_Release
+    2300032: Stock_Heavy
+    2300034: Stock_Heavy_Polymer
+    2300036: Trigger
+    3300000: Barrel_Long
+    3300002: Bipod_Leg_Left
+    3300004: Bipod_Leg_Right
+    3300006: Bipod_mount
+    3300008: Bipod_Swivel
+    3300010: Body
+    3300012: Bolt
+    3300014: Grip
+    3300016: Grip_Polymer
+    3300018: Handguard_Heavy
+    3300020: Handguard_Heavy_Polymer
+    3300022: Ironsights
+    3300024: Kobra
+    3300026: Magazine_Drum
+    3300028: Magazine_Extended_Bakelite
+    3300030: Receiver_Magazine_Release
+    3300032: Stock_Heavy
+    3300034: Stock_Heavy_Polymer
+    3300036: Trigger
+    4300000: Body
+    4300002: Ironsights
+    4300004: Trigger
+    4300006: Bolt
+    4300008: Receiver_Magazine_Release
+    4300010: Barrel_Long
+    4300012: Bipod_mount
+    4300014: Bipod_Swivel
+    4300016: Bipod_Leg_Left
+    4300018: Bipod_Leg_Right
+    4300020: Magazine_Extended_Bakelite
+    4300022: Magazine_Drum
+    4300024: Handguard_Heavy
+    4300026: Handguard_Heavy_Polymer
+    4300028: Kobra
+    4300030: Grip
+    4300032: Stock_Heavy
+    4300034: Grip_Polymer
+    4300036: Stock_Heavy_Polymer
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

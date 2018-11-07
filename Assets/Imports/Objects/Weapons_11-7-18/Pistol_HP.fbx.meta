@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: 62a7c0dad3b39914ba52d2d6b2bfa01b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Pistol_HP_Barrel
+    100004: Pistol_HP_Grip
+    100006: Pistol_HP_Hammer
+    100008: Pistol_HP_Magazine
+    100010: Pistol_HP_Slide
+    100012: Pistol_HP_Trigger
+    100014: Suppressor_Cloth
+    400000: //RootNode
+    400002: Pistol_HP_Barrel
+    400004: Pistol_HP_Grip
+    400006: Pistol_HP_Hammer
+    400008: Pistol_HP_Magazine
+    400010: Pistol_HP_Slide
+    400012: Pistol_HP_Trigger
+    400014: Suppressor_Cloth
+    2100000: Pistol_HP_mat
+    2100002: AK_Platform_Accesories_mat
+    2300000: Pistol_HP_Barrel
+    2300002: Pistol_HP_Grip
+    2300004: Pistol_HP_Hammer
+    2300006: Pistol_HP_Magazine
+    2300008: Pistol_HP_Slide
+    2300010: Pistol_HP_Trigger
+    2300012: Suppressor_Cloth
+    3300000: Pistol_HP_Barrel
+    3300002: Pistol_HP_Grip
+    3300004: Pistol_HP_Hammer
+    3300006: Pistol_HP_Magazine
+    3300008: Pistol_HP_Slide
+    3300010: Pistol_HP_Trigger
+    3300012: Suppressor_Cloth
+    4300000: Pistol_HP_Slide
+    4300002: Pistol_HP_Grip
+    4300004: Pistol_HP_Barrel
+    4300006: Pistol_HP_Hammer
+    4300008: Pistol_HP_Trigger
+    4300010: Pistol_HP_Magazine
+    4300012: Suppressor_Cloth
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

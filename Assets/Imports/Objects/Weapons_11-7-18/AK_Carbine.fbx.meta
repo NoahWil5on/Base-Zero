@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: c3f564fe597d1714f92e8bb35ba97a73
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Barrel_Carbine
+    100004: Barrel_Para
+    100006: Barrels
+    100008: Body
+    100010: Bolt
+    100012: GP
+    100014: GP25_Carbine
+    100016: GP25_Trigger
+    100018: Grip
+    100020: Grip_Polymer
+    100022: Handguard
+    100024: Handguard_Carbine
+    100026: Handguard_Carbine_Polymer
+    100028: Ironsights
+    100030: Kobra
+    100032: Magazine_mid_Bakelite
+    100034: Magazine_Standard_Bakelite_Plum
+    100036: Magazines
+    100038: Muzzle_Brake_Carbine
+    100040: Muzzle_Brake_Para
+    100042: Receiver_Magazine_Release
+    100044: Sights
+    100046: Stock_Skeleton_Polymer
+    100048: Stocks
+    100050: Trigger
+    400000: //RootNode
+    400002: Barrel_Carbine
+    400004: Barrel_Para
+    400006: Barrels
+    400008: Body
+    400010: Bolt
+    400012: GP
+    400014: GP25_Carbine
+    400016: GP25_Trigger
+    400018: Grip
+    400020: Grip_Polymer
+    400022: Handguard
+    400024: Handguard_Carbine
+    400026: Handguard_Carbine_Polymer
+    400028: Ironsights
+    400030: Kobra
+    400032: Magazine_mid_Bakelite
+    400034: Magazine_Standard_Bakelite_Plum
+    400036: Magazines
+    400038: Muzzle_Brake_Carbine
+    400040: Muzzle_Brake_Para
+    400042: Receiver_Magazine_Release
+    400044: Sights
+    400046: Stock_Skeleton_Polymer
+    400048: Stocks
+    400050: Trigger
+    2100000: AK_Platform_Body_mat
+    2100002: AK_Platform_Accesories_mat
+    2100004: AK_Platforms_Magazine_mat
+    2100006: AK_Platforms_Magazine_Plum_mat
+    2100008: AK_Platform_Guards_mat
+    2100010: AK_Platform_Guards_Plymer_mat
+    2300000: Barrel_Carbine
+    2300002: Barrel_Para
+    2300004: Body
+    2300006: Bolt
+    2300008: GP25_Carbine
+    2300010: GP25_Trigger
+    2300012: Grip
+    2300014: Grip_Polymer
+    2300016: Handguard_Carbine
+    2300018: Handguard_Carbine_Polymer
+    2300020: Ironsights
+    2300022: Kobra
+    2300024: Magazine_mid_Bakelite
+    2300026: Magazine_Standard_Bakelite_Plum
+    2300028: Muzzle_Brake_Carbine
+    2300030: Muzzle_Brake_Para
+    2300032: Receiver_Magazine_Release
+    2300034: Stock_Skeleton_Polymer
+    2300036: Trigger
+    3300000: Barrel_Carbine
+    3300002: Barrel_Para
+    3300004: Body
+    3300006: Bolt
+    3300008: GP25_Carbine
+    3300010: GP25_Trigger
+    3300012: Grip
+    3300014: Grip_Polymer
+    3300016: Handguard_Carbine
+    3300018: Handguard_Carbine_Polymer
+    3300020: Ironsights
+    3300022: Kobra
+    3300024: Magazine_mid_Bakelite
+    3300026: Magazine_Standard_Bakelite_Plum
+    3300028: Muzzle_Brake_Carbine
+    3300030: Muzzle_Brake_Para
+    3300032: Receiver_Magazine_Release
+    3300034: Stock_Skeleton_Polymer
+    3300036: Trigger
+    4300000: Body
+    4300002: Ironsights
+    4300004: Trigger
+    4300006: Bolt
+    4300008: Receiver_Magazine_Release
+    4300010: Barrel_Carbine
+    4300012: Muzzle_Brake_Carbine
+    4300014: Barrel_Para
+    4300016: Muzzle_Brake_Para
+    4300018: Magazine_mid_Bakelite
+    4300020: Magazine_Standard_Bakelite_Plum
+    4300022: Handguard_Carbine
+    4300024: Handguard_Carbine_Polymer
+    4300026: GP25_Trigger
+    4300028: GP25_Carbine
+    4300030: Kobra
+    4300032: Grip
+    4300034: Grip_Polymer
+    4300036: Stock_Skeleton_Polymer
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

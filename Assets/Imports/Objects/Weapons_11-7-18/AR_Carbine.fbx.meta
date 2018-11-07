@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: aadd632d8db832b4c95a09de64144129
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Action
+    100002: //RootNode
+    100004: Barrel_Commando_Carbine_GL
+    100006: Barrel_Short_Carbine_GL
+    100008: Barrels
+    100010: Carry_Handle
+    100012: CCO_Scope
+    100014: Collapsible_Stock
+    100016: GL
+    100018: Handguard_Carbine
+    100020: Handguard_Carbine_GL
+    100022: Handguard_GL_Pump
+    100024: Handguard_GL_Sight_Carbine
+    100026: Handguard_GL_Trigger
+    100028: Handguards
+    100030: Magazine_Short
+    100032: Magazine_Standard
+    100034: Magazines
+    100036: Receiver
+    100038: Sights
+    100040: Stock_Rear
+    100042: Stock_Skeleton
+    100044: Stocks
+    100046: Trigger
+    400000: Action
+    400002: //RootNode
+    400004: Barrel_Commando_Carbine_GL
+    400006: Barrel_Short_Carbine_GL
+    400008: Barrels
+    400010: Carry_Handle
+    400012: CCO_Scope
+    400014: Collapsible_Stock
+    400016: GL
+    400018: Handguard_Carbine
+    400020: Handguard_Carbine_GL
+    400022: Handguard_GL_Pump
+    400024: Handguard_GL_Sight_Carbine
+    400026: Handguard_GL_Trigger
+    400028: Handguards
+    400030: Magazine_Short
+    400032: Magazine_Standard
+    400034: Magazines
+    400036: Receiver
+    400038: Sights
+    400040: Stock_Rear
+    400042: Stock_Skeleton
+    400044: Stocks
+    400046: Trigger
+    2100000: AR_Platform_Body_mat
+    2100002: AR_Platform_Guards_mat
+    2100004: AR_Platform_Accesories_mat
+    2300000: Action
+    2300002: Barrel_Commando_Carbine_GL
+    2300004: Barrel_Short_Carbine_GL
+    2300006: Carry_Handle
+    2300008: CCO_Scope
+    2300010: Collapsible_Stock
+    2300012: Handguard_Carbine
+    2300014: Handguard_Carbine_GL
+    2300016: Handguard_GL_Pump
+    2300018: Handguard_GL_Sight_Carbine
+    2300020: Handguard_GL_Trigger
+    2300022: Magazine_Short
+    2300024: Magazine_Standard
+    2300026: Receiver
+    2300028: Stock_Rear
+    2300030: Stock_Skeleton
+    2300032: Trigger
+    3300000: Action
+    3300002: Barrel_Commando_Carbine_GL
+    3300004: Barrel_Short_Carbine_GL
+    3300006: Carry_Handle
+    3300008: CCO_Scope
+    3300010: Collapsible_Stock
+    3300012: Handguard_Carbine
+    3300014: Handguard_Carbine_GL
+    3300016: Handguard_GL_Pump
+    3300018: Handguard_GL_Sight_Carbine
+    3300020: Handguard_GL_Trigger
+    3300022: Magazine_Short
+    3300024: Magazine_Standard
+    3300026: Receiver
+    3300028: Stock_Rear
+    3300030: Stock_Skeleton
+    3300032: Trigger
+    4300000: Receiver
+    4300002: Carry_Handle
+    4300004: Action
+    4300006: Trigger
+    4300008: Stock_Skeleton
+    4300010: Collapsible_Stock
+    4300012: Stock_Rear
+    4300014: Handguard_Carbine
+    4300016: Handguard_GL_Trigger
+    4300018: Handguard_GL_Pump
+    4300020: Handguard_Carbine_GL
+    4300022: Handguard_GL_Sight_Carbine
+    4300024: Barrel_Commando_Carbine_GL
+    4300026: Barrel_Short_Carbine_GL
+    4300028: CCO_Scope
+    4300030: Magazine_Standard
+    4300032: Magazine_Short
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

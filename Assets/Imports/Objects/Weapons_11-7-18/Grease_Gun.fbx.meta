@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 69ad811f474cff8428ce8d0cb9eab11a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Dual_Tape_1
+    100002: Dual_Tape_2
+    100004: //RootNode
+    100006: Grease_Gun_Body
+    100008: Grease_Gun_Cover
+    100010: Grease_Gun_Magazine
+    100012: Grease_Gun_Red_Dot
+    100014: Grease_Gun_Stock
+    100016: Grease_Gun_Suppressor_Cloth
+    100018: Grease_Gun_Trigger
+    100020: M3A1_Magazine_Dual
+    100022: M3A1_Magazine_Dual_2
+    400000: Dual_Tape_1
+    400002: Dual_Tape_2
+    400004: //RootNode
+    400006: Grease_Gun_Body
+    400008: Grease_Gun_Cover
+    400010: Grease_Gun_Magazine
+    400012: Grease_Gun_Red_Dot
+    400014: Grease_Gun_Stock
+    400016: Grease_Gun_Suppressor_Cloth
+    400018: Grease_Gun_Trigger
+    400020: M3A1_Magazine_Dual
+    400022: M3A1_Magazine_Dual_2
+    2100000: Grease_Gun_mat
+    2100002: AR_Platform_AR_Platform_Accesories_mat
+    2300000: Dual_Tape_1
+    2300002: Dual_Tape_2
+    2300004: Grease_Gun_Body
+    2300006: Grease_Gun_Cover
+    2300008: Grease_Gun_Magazine
+    2300010: Grease_Gun_Red_Dot
+    2300012: Grease_Gun_Stock
+    2300014: Grease_Gun_Suppressor_Cloth
+    2300016: Grease_Gun_Trigger
+    2300018: M3A1_Magazine_Dual
+    2300020: M3A1_Magazine_Dual_2
+    3300000: Dual_Tape_1
+    3300002: Dual_Tape_2
+    3300004: Grease_Gun_Body
+    3300006: Grease_Gun_Cover
+    3300008: Grease_Gun_Magazine
+    3300010: Grease_Gun_Red_Dot
+    3300012: Grease_Gun_Stock
+    3300014: Grease_Gun_Suppressor_Cloth
+    3300016: Grease_Gun_Trigger
+    3300018: M3A1_Magazine_Dual
+    3300020: M3A1_Magazine_Dual_2
+    4300000: Grease_Gun_Trigger
+    4300002: Grease_Gun_Body
+    4300004: Grease_Gun_Cover
+    4300006: Grease_Gun_Stock
+    4300008: Grease_Gun_Suppressor_Cloth
+    4300010: Grease_Gun_Magazine
+    4300012: Grease_Gun_Red_Dot
+    4300014: M3A1_Magazine_Dual
+    4300016: Dual_Tape_1
+    4300018: M3A1_Magazine_Dual_2
+    4300020: Dual_Tape_2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

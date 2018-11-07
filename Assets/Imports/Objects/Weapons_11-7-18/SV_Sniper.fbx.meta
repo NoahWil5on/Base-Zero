@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: fe1be5b069123034a858de1bfe2ec335
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Barrel_Sniper
+    100002: Barrels
+    100004: Body
+    100006: Bolt
+    100008: Grip
+    100010: Grip_Polymer
+    100012: Handguard
+    100014: Handguard_Sniper
+    100016: Handguard_Sniper_Polymer
+    100018: Ironsights
+    100020: Magazine_Sniper
+    100022: Magazines
+    100024: Muzzle_Brake_Sniper
+    100026: Polymer
+    100028: PSO
+    100030: PSO_3
+    100032: Receiver_Magazine_Release
+    100034: Sights
+    100036: Stock_Sniper
+    100038: Stock_Sniper_Polymer
+    100040: Stocks
+    100042: //RootNode
+    100044: Trigger
+    100046: Wood
+    400000: Barrel_Sniper
+    400002: Barrels
+    400004: Body
+    400006: Bolt
+    400008: Grip
+    400010: Grip_Polymer
+    400012: Handguard
+    400014: Handguard_Sniper
+    400016: Handguard_Sniper_Polymer
+    400018: Ironsights
+    400020: Magazine_Sniper
+    400022: Magazines
+    400024: Muzzle_Brake_Sniper
+    400026: Polymer
+    400028: PSO
+    400030: PSO_3
+    400032: Receiver_Magazine_Release
+    400034: Sights
+    400036: Stock_Sniper
+    400038: Stock_Sniper_Polymer
+    400040: Stocks
+    400042: //RootNode
+    400044: Trigger
+    400046: Wood
+    2100000: AK_Platform_Body_mat
+    2100002: AK_Platform_Accesories_mat
+    2100004: AK_Platforms_Magazine_mat
+    2100006: AK_Platform_Guards_mat
+    2100008: AK_Platform_Guards_Plymer_mat
+    2300000: Barrel_Sniper
+    2300002: Body
+    2300004: Bolt
+    2300006: Grip
+    2300008: Grip_Polymer
+    2300010: Handguard_Sniper
+    2300012: Handguard_Sniper_Polymer
+    2300014: Ironsights
+    2300016: Magazine_Sniper
+    2300018: Muzzle_Brake_Sniper
+    2300020: PSO
+    2300022: PSO_3
+    2300024: Receiver_Magazine_Release
+    2300026: Stock_Sniper
+    2300028: Stock_Sniper_Polymer
+    2300030: Trigger
+    3300000: Barrel_Sniper
+    3300002: Body
+    3300004: Bolt
+    3300006: Grip
+    3300008: Grip_Polymer
+    3300010: Handguard_Sniper
+    3300012: Handguard_Sniper_Polymer
+    3300014: Ironsights
+    3300016: Magazine_Sniper
+    3300018: Muzzle_Brake_Sniper
+    3300020: PSO
+    3300022: PSO_3
+    3300024: Receiver_Magazine_Release
+    3300026: Stock_Sniper
+    3300028: Stock_Sniper_Polymer
+    3300030: Trigger
+    4300000: Body
+    4300002: Ironsights
+    4300004: Trigger
+    4300006: Bolt
+    4300008: Receiver_Magazine_Release
+    4300010: Barrel_Sniper
+    4300012: Muzzle_Brake_Sniper
+    4300014: Magazine_Sniper
+    4300016: Handguard_Sniper
+    4300018: Handguard_Sniper_Polymer
+    4300020: PSO
+    4300022: PSO_3
+    4300024: Grip
+    4300026: Stock_Sniper
+    4300028: Grip_Polymer
+    4300030: Stock_Sniper_Polymer
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

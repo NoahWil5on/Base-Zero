@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: 62206204bea581447b0b19989ad8a661
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: AK_Platform:Kobra
+    100002: AK_Platform:PSO
+    100004: Barrel_Long
+    100006: Barrel_Short
+    100008: Barrels
+    100010: Body
+    100012: Body_Polymer
+    100014: Ironsights
+    100016: Magazine_mid_Bakelite_Plum
+    100018: Magazine_short_Bakelite_Plum
+    100020: Magazines
+    100022: Sights
+    100024: Slide
+    100026: //RootNode
+    100028: Trigger
+    100030: Wrap_barrel
+    100032: Wrap_stock
+    100034: Wraps
+    400000: AK_Platform:Kobra
+    400002: AK_Platform:PSO
+    400004: Barrel_Long
+    400006: Barrel_Short
+    400008: Barrels
+    400010: Body
+    400012: Body_Polymer
+    400014: Ironsights
+    400016: Magazine_mid_Bakelite_Plum
+    400018: Magazine_short_Bakelite_Plum
+    400020: Magazines
+    400022: Sights
+    400024: Slide
+    400026: //RootNode
+    400028: Trigger
+    400030: Wrap_barrel
+    400032: Wrap_stock
+    400034: Wraps
+    2100000: SV_Rifle_mat
+    2100002: SV_Rifle_Polymer_mat
+    2100004: AK_Platform_AK_Platforms_Magazine_Plum_mat
+    2100006: AK_Platform_AK_Platform_Accesories_mat
+    2300000: AK_Platform:Kobra
+    2300002: AK_Platform:PSO
+    2300004: Barrel_Long
+    2300006: Barrel_Short
+    2300008: Body
+    2300010: Body_Polymer
+    2300012: Ironsights
+    2300014: Magazine_mid_Bakelite_Plum
+    2300016: Magazine_short_Bakelite_Plum
+    2300018: Slide
+    2300020: Trigger
+    2300022: Wrap_barrel
+    2300024: Wrap_stock
+    3300000: AK_Platform:Kobra
+    3300002: AK_Platform:PSO
+    3300004: Barrel_Long
+    3300006: Barrel_Short
+    3300008: Body
+    3300010: Body_Polymer
+    3300012: Ironsights
+    3300014: Magazine_mid_Bakelite_Plum
+    3300016: Magazine_short_Bakelite_Plum
+    3300018: Slide
+    3300020: Trigger
+    3300022: Wrap_barrel
+    3300024: Wrap_stock
+    4300000: Trigger
+    4300002: Slide
+    4300004: Ironsights
+    4300006: Body
+    4300008: Body_Polymer
+    4300010: Wrap_barrel
+    4300012: Wrap_stock
+    4300014: Magazine_short_Bakelite_Plum
+    4300016: Magazine_mid_Bakelite_Plum
+    4300018: Barrel_Short
+    4300020: Barrel_Long
+    4300022: AK_Platform:Kobra
+    4300024: AK_Platform:PSO
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: ac5d39f1681dbe143bd203149eb97293
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Barrel_Para
+    100004: Barrel_Standard
+    100006: Barrels
+    100008: Body
+    100010: Bolt
+    100012: GP
+    100014: GP25_Standard
+    100016: GP25_Trigger
+    100018: Grip
+    100020: Grip_Polymer
+    100022: Handguard
+    100024: Handguard_Standard
+    100026: Handguard_Standard_Polymer
+    100028: Ironsights
+    100030: Magazine_Duel_Tape_Plum
+    100032: Magazine_Standard_Bakelite
+    100034: Magazine_Standard_Duel_Plum
+    100036: Magazine_Standard_Duel_Plum_2
+    100038: Magazines
+    100040: Muzzle_Brake
+    100042: Muzzle_Brake_Para
+    100044: PSO
+    100046: Receiver_Magazine_Release
+    100048: Sights
+    100050: Stock_full
+    100052: Stock_full_Polymer
+    100054: Stocks
+    100056: Trigger
+    400000: //RootNode
+    400002: Barrel_Para
+    400004: Barrel_Standard
+    400006: Barrels
+    400008: Body
+    400010: Bolt
+    400012: GP
+    400014: GP25_Standard
+    400016: GP25_Trigger
+    400018: Grip
+    400020: Grip_Polymer
+    400022: Handguard
+    400024: Handguard_Standard
+    400026: Handguard_Standard_Polymer
+    400028: Ironsights
+    400030: Magazine_Duel_Tape_Plum
+    400032: Magazine_Standard_Bakelite
+    400034: Magazine_Standard_Duel_Plum
+    400036: Magazine_Standard_Duel_Plum_2
+    400038: Magazines
+    400040: Muzzle_Brake
+    400042: Muzzle_Brake_Para
+    400044: PSO
+    400046: Receiver_Magazine_Release
+    400048: Sights
+    400050: Stock_full
+    400052: Stock_full_Polymer
+    400054: Stocks
+    400056: Trigger
+    2100000: AK_Platform_Body_mat
+    2100002: AK_Platform_Accesories_mat
+    2100004: AK_Platforms_Magazine_mat
+    2100006: AK_Platform_Guards_mat
+    2100008: AK_Platform_Guards_Plymer_mat
+    2300000: Barrel_Para
+    2300002: Barrel_Standard
+    2300004: Body
+    2300006: Bolt
+    2300008: GP25_Standard
+    2300010: GP25_Trigger
+    2300012: Grip
+    2300014: Grip_Polymer
+    2300016: Handguard_Standard
+    2300018: Handguard_Standard_Polymer
+    2300020: Ironsights
+    2300022: Magazine_Duel_Tape_Plum
+    2300024: Magazine_Standard_Bakelite
+    2300026: Magazine_Standard_Duel_Plum
+    2300028: Magazine_Standard_Duel_Plum_2
+    2300030: Muzzle_Brake
+    2300032: Muzzle_Brake_Para
+    2300034: PSO
+    2300036: Receiver_Magazine_Release
+    2300038: Stock_full
+    2300040: Stock_full_Polymer
+    2300042: Trigger
+    3300000: Barrel_Para
+    3300002: Barrel_Standard
+    3300004: Body
+    3300006: Bolt
+    3300008: GP25_Standard
+    3300010: GP25_Trigger
+    3300012: Grip
+    3300014: Grip_Polymer
+    3300016: Handguard_Standard
+    3300018: Handguard_Standard_Polymer
+    3300020: Ironsights
+    3300022: Magazine_Duel_Tape_Plum
+    3300024: Magazine_Standard_Bakelite
+    3300026: Magazine_Standard_Duel_Plum
+    3300028: Magazine_Standard_Duel_Plum_2
+    3300030: Muzzle_Brake
+    3300032: Muzzle_Brake_Para
+    3300034: PSO
+    3300036: Receiver_Magazine_Release
+    3300038: Stock_full
+    3300040: Stock_full_Polymer
+    3300042: Trigger
+    4300000: Body
+    4300002: Ironsights
+    4300004: Trigger
+    4300006: Bolt
+    4300008: Receiver_Magazine_Release
+    4300010: Barrel_Para
+    4300012: Muzzle_Brake_Para
+    4300014: Barrel_Standard
+    4300016: Muzzle_Brake
+    4300018: Magazine_Standard_Bakelite
+    4300020: Magazine_Standard_Duel_Plum
+    4300022: Magazine_Standard_Duel_Plum_2
+    4300024: Magazine_Duel_Tape_Plum
+    4300026: Handguard_Standard
+    4300028: Handguard_Standard_Polymer
+    4300030: GP25_Trigger
+    4300032: GP25_Standard
+    4300034: PSO
+    4300036: Grip
+    4300038: Stock_full
+    4300040: Grip_Polymer
+    4300042: Stock_full_Polymer
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
