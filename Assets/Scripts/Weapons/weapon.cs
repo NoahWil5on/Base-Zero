@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class weapon : MonoBehaviour {
+public class weapon : MonoBehaviour
+{
 
     public float damage = 10f;
     public float range = 200f;
@@ -37,63 +38,71 @@ public class weapon : MonoBehaviour {
         //localPos = gameObject.transform.localPosition;
         //localRot = gameObject.transform.localRotation;
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         //currentAmmoCount = gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType);
 
         fireTimer += Time.deltaTime;
         reloadTimer += Time.deltaTime;
 
-        if(fireTimer >= 1/(fireRate * 2)){
+        if (fireTimer >= 1 / (fireRate * 2))
+        {
             secondMotionAnimator.SetBool("firing", false);
         }
-        if(reloadTimer < reloadTime){
+        if (reloadTimer < reloadTime)
+        {
             float myFOV = fpsCam.GetComponent<Camera>().fieldOfView;
             animator.SetBool("ads", false);
-            fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV,60,.2f);
+            fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV, 60, .2f);
             return;
-        }else{
+        }
+        else
+        {
             animator.SetBool("reloading", false);
         }
-        if(Input.GetKey(KeyCode.R)){
+        if (Input.GetKey(KeyCode.R))
+        {
             Reload();
             return;
         }
-		if(Input.GetButton("Fire1") && fireTimer >= 1/fireRate && reloadTimer > reloadTime + 0.3f){
+        if (Input.GetButton("Fire1") && fireTimer >= 1 / fireRate && reloadTimer > reloadTime + 0.3f)
+        {
             Shoot();
-            secondMotionAnimator.SetBool("firing", true);
             fireTimer = 0;
         }
         ADS();
-	}
+    }
     void ADS()
     {
         //Vector3 myPostion = gameObject.transform.localPosition;
         float myFOV = fpsCam.GetComponent<Camera>().fieldOfView;
-        if(Input.GetButton("Fire2")){
+        if (Input.GetButton("Fire2"))
+        {
             // gameObject.transform.localPosition = LerpVector(myPostion, new Vector3(0,-.216f,.7f),.2f);
             // gameObject.transform.localRotation = Quaternion.LookRotation(new Vector3(0,0,-1));
             animator.SetBool("ads", true);
-            fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV,30,.2f);
-        }else{
+            fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV, 30, .2f);
+        }
+        else
+        {
             // gameObject.transform.localPosition = LerpVector(myPostion, localPos, .2f);
             // gameObject.transform.localRotation = localRot;
             animator.SetBool("ads", false);
-            fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV,60,.2f);
+            fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV, 60, .2f);
         }
     }
     void Shoot()
     {
-       if(currentAmmoCount <= 0) return;
+        if (currentAmmoCount <= 0) return;
+        secondMotionAnimator.SetBool("firing", true);
 
-
-       //gameManager.GetComponent<GameManager>().AddAmmo(currentAmmoType, -1);
+        //gameManager.GetComponent<GameManager>().AddAmmo(currentAmmoType, -1);
 
         muzzleFlash.Play();
         fireSound.GetComponent<AudioSource>().Play(0);
-        currentAmmoCount --;
+        currentAmmoCount--;
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
@@ -115,29 +124,30 @@ public class weapon : MonoBehaviour {
             }
             GameObject impact = Instantiate(myImpact, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impact, 1);
-        }    
+        }
     }
-    void Reload(){
-        if(currentAmmoCount == magSize) return;
+    void Reload()
+    {
+        if (currentAmmoCount == magSize) return;
         int ammoCount = gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType);
-        if(ammoCount == 0) return;
+        if (ammoCount == 0) return;
 
         animator.SetBool("reloading", true);
 
         int ammoChange = Mathf.Min((magSize - currentAmmoCount), ammoCount);
         currentAmmoCount += ammoChange;
         gameManager.GetComponent<GameManager>().AddAmmo(currentAmmoType, -ammoChange);
-    
+
         reloadTimer = 0;
     }
     Vector3 LerpVector(Vector3 vec1, Vector3 vec2, float amount)
     {
         amount = Mathf.Clamp(amount, 0f, 1f);
 
-        float x = Mathf.Lerp(vec1.x,vec2.x,amount);
-        float y = Mathf.Lerp(vec1.y,vec2.y,amount);
-        float z = Mathf.Lerp(vec1.z,vec2.z,amount);
+        float x = Mathf.Lerp(vec1.x, vec2.x, amount);
+        float y = Mathf.Lerp(vec1.y, vec2.y, amount);
+        float z = Mathf.Lerp(vec1.z, vec2.z, amount);
 
-        return new Vector3(x,y,z);
+        return new Vector3(x, y, z);
     }
 }
