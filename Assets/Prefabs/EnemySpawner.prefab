@@ -109,5 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRef: {fileID: 0}
-  enemyType: {fileID: 1691537261510704, guid: b095b487b695f9a49b6ab17abe9a99ba, type: 2}
+  enemyType: {fileID: 1351187042072464, guid: 396929058c7f816469de5c2304af3931, type: 2}
   timeBetweenSpawns: 3
+  spawnLimitedEnemies: 0
+  enemiesToSpawn: 0

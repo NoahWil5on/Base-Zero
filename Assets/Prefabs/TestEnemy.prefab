@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a7018bdb72ddd418f65cd57ab3b6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   zombie: {fileID: 195339936104036582}
   timeBetweenAttacks: 1
   attackDamage: 200
