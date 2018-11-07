@@ -10,6 +10,9 @@ public class SpawnHandler : MonoBehaviour {
     public float timeBetweenSpawns = 2f;
 
     private bool coroutineFired = false;
+
+    public bool spawnLimitedEnemies = false;
+    public int enemiesToSpawn;
 	// Use this for initialization
 	void Start () {
 
@@ -22,26 +25,52 @@ public class SpawnHandler : MonoBehaviour {
         if (!coroutineFired)
         {
             coroutineFired = true;
-            StartCoroutine(Spawn());
+
+            if (!spawnLimitedEnemies)
+            {
+
+                StartCoroutine(Spawn());
+            }
+            else if (spawnLimitedEnemies)
+            {
+                StartCoroutine(SpawnLimited());
+            }
 
         }
 
     }
     IEnumerator Spawn()
     {
-        if(Vector3.Dot(playerRef.transform.forward, (this.transform.position - playerRef.transform.position).normalized) < 0f)
+       
+
+            if(Vector3.Dot(playerRef.transform.forward, (this.transform.position - playerRef.transform.position).normalized) < 0f)
+            {
+                Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
+                yield return new WaitForSeconds(timeBetweenSpawns);
+                Debug.Log("lalalala");
+                coroutineFired = false;
+            }
+            else
+            {
+                Debug.Log("FACING!!!");
+                coroutineFired = false;
+
+            }
+        
+       
+    }
+    IEnumerator SpawnLimited()
+    {
+        
+        for(int i = 0; i < enemiesToSpawn; i++)
         {
+
             Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
             yield return new WaitForSeconds(timeBetweenSpawns);
-            Debug.Log("lalalala");
-            coroutineFired = false;
+            Debug.Log("3hunnit");
         }
-        else
-        {
-            Debug.Log("FACING!!!");
-            coroutineFired = false;
-
-        }
-
+        
+            
+        
     }
 }
