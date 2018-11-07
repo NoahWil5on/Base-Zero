@@ -11,14 +11,14 @@ public class Quest : MonoBehaviour
     public string questName;
 
     public string questText;
-    private Text UITextRef;
+    public Text UITextRef;
 
     // Use this for initialization
     void Start()
     {
         
         questStatus = "InProgress";
-        UITextRef = (Text)FindObjectOfType(typeof(Text));
+        UITextRef = GameObject.FindWithTag("ObjectiveText").GetComponentInChildren<Text>();
         this.transform.gameObject.SetActive(false);
 
     }

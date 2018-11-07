@@ -11,13 +11,15 @@ public class QuestManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        for(int i = 0; i < 3; i++)
-        {
 
-            int index = Random.Range(0, HQQuests.Length);
-            currentQuests[i] = HQQuests[index];
-            Destroy(HQQuests[index]);
-        }
+        currentQuests[0].SetActive(true);
+        //for(int i = 0; i < 3; i++)
+        //{
+
+        //    int index = Random.Range(0, HQQuests.Length);
+        //    currentQuests[i] = HQQuests[index];
+        //    Destroy(HQQuests[index]);
+        //}
 
 
 		

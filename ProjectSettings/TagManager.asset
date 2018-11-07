@@ -11,6 +11,7 @@ TagManager:
   - ScrapBox
   - SmallCash
   - EnemySpawner
+  - ObjectiveText
   layers:
   - Default
   - TransparentFX
