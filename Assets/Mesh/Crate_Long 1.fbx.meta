@@ -1,14 +1,19 @@
 fileFormatVersion: 2
-guid: 27574afbadc4bae4c94910177be72522
+guid: 0950fec647e700649b9e054b5ab0d99c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Crate_Long_Top
     400000: //RootNode
+    400002: Crate_Long_Top
     2100000: Military_Crates_mat
     2300000: //RootNode
+    2300002: Crate_Long_Top
     3300000: //RootNode
+    3300002: Crate_Long_Top
     4300000: Crate_Long
+    4300002: Crate_Long_Top
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -40,7 +45,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
