@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4451915256844668}
   - component: {fileID: 33422187079412990}
   - component: {fileID: 23379740541809116}
-  - component: {fileID: 65629612652910350}
   - component: {fileID: 114610184993661460}
   m_Layer: 0
   m_Name: EnemySpawner
@@ -37,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1224094075149828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.9, y: 5.73, z: 8.88}
+  m_LocalPosition: {x: 490.83417, y: -0.0036621094, z: 274.99823}
   m_LocalScale: {x: 0.16044, y: 0.16044, z: 0.16044}
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,18 +84,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1224094075149828}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65629612652910350
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1224094075149828}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114610184993661460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,6 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRef: {fileID: 0}
   enemyType: {fileID: 1351187042072464, guid: 396929058c7f816469de5c2304af3931, type: 2}
-  timeBetweenSpawns: 3
-  spawnLimitedEnemies: 0
-  enemiesToSpawn: 0
+  timeBetweenSpawns: 5
+  spawnLimitedEnemies: 1
+  enemiesToSpawn: 8
