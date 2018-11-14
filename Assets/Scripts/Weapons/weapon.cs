@@ -22,6 +22,8 @@ public class weapon : MonoBehaviour
     public GameObject impactEffect;
     public GameObject blood;
     public GameObject bulletHole;
+    public GameObject scopeImage;
+    public GameObject weaponCamera;
 
     public AudioSource fireSound;
     public Animator animator;
@@ -80,6 +82,10 @@ public class weapon : MonoBehaviour
         float myFOV = fpsCam.GetComponent<Camera>().fieldOfView;
         if (Input.GetButton("Fire2"))
         {
+            if(scopeImage){
+                scopeImage.SetActive(true);
+                weaponCamera.SetActive(false);
+            }
             // gameObject.transform.localPosition = LerpVector(myPostion, new Vector3(0,-.216f,.7f),.2f);
             // gameObject.transform.localRotation = Quaternion.LookRotation(new Vector3(0,0,-1));
             animator.SetBool("ads", true);
@@ -87,6 +93,10 @@ public class weapon : MonoBehaviour
         }
         else
         {
+            if(scopeImage){
+                scopeImage.SetActive(false);
+                weaponCamera.SetActive(true);
+            }
             // gameObject.transform.localPosition = LerpVector(myPostion, localPos, .2f);
             // gameObject.transform.localRotation = localRot;
             animator.SetBool("ads", false);
@@ -131,6 +141,11 @@ public class weapon : MonoBehaviour
         if (currentAmmoCount == magSize) return;
         int ammoCount = gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType);
         if (ammoCount == 0) return;
+
+        if(scopeImage){
+            scopeImage.SetActive(false);
+            weaponCamera.SetActive(true);
+        }
 
         animator.SetBool("reloading", true);
 
