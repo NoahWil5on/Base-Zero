@@ -313,8 +313,8 @@ GameObject:
   - component: {fileID: 33829896431652148}
   - component: {fileID: 23003401727314164}
   - component: {fileID: 136146949409777530}
-  - component: {fileID: 195510215699850042}
   - component: {fileID: 114714935321027204}
+  - component: {fileID: 195510215699850042}
   - component: {fileID: 114779054050871670}
   m_Layer: 0
   m_Name: TestEnemy 1
@@ -2310,10 +2310,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   zombie: {fileID: 195510215699850042}
+  wanderRadius: 80
+  wanderTimer: 10
   timeBetweenAttacks: 1
   attackDamage: 200
   playerInRange: 0
-  timer: 0
+  distanceToSeekPlayer: 50
 --- !u!114 &114779054050871670
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -12,17 +12,25 @@ public class ZombieController : MonoBehaviour {
     public GameObject player;
     public NavMeshAgent zombie;
 
-    
+    public float wanderRadius;
+    public float wanderTimer;
+
+    private float wanderTime;
+    private float timer;
     
     public float timeBetweenAttacks = 0.5f;
     public int attackDamage = 200;
     public bool playerInRange;
-    public float timer;
+
+    public float distanceToSeekPlayer = 20f;
+    
 
     private void Start()
     {
+        wanderTime = wanderTimer;
         player = GameObject.FindWithTag("Player");
         zombie.stoppingDistance = 2f;
+       
     }
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
@@ -39,11 +47,23 @@ public class ZombieController : MonoBehaviour {
             playerInRange = false;
         }
     }
+    public static Vector3 randomWanderDirection(Vector3 origin, float dist, int layer)
+    {
+        Vector3 randDir = Random.insideUnitSphere * dist;
+
+        randDir += origin;
+
+        NavMeshHit navHit;
+        NavMesh.SamplePosition(randDir, out navHit, dist, layer);
+
+        return navHit.position;
+    }
     void Update () {
 
+        float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
         int playerHealth = player.GetComponent<PlayerHandler>().GetHealth();
 
-        
+        wanderTime += Time.deltaTime;
         timer += Time.deltaTime;
 
         if (playerInRange)
@@ -64,8 +84,25 @@ public class ZombieController : MonoBehaviour {
             Debug.Log("Zombie Attack");
             timer = 0f;
         }
-       // player.GetComponent<PlayerHandler>().TakeDamage(100f);       
-        zombie.SetDestination(player.transform.localPosition);
+       // player.GetComponent<PlayerHandler>().TakeDamage(100f);    
+       
+        if(distanceToPlayer > distanceToSeekPlayer)
+        {
+
+           if(wanderTime >= wanderTimer)
+            {
+
+                Vector3 newDir = randomWanderDirection(transform.position, wanderRadius, 1);
+                zombie.SetDestination(newDir);
+                wanderTime = 0;
+            }
+        }
+        else if(distanceToPlayer < distanceToSeekPlayer)
+        {
+
+            zombie.SetDestination(player.transform.localPosition);
+        }
+        
 	}
     private void Attack()
     {

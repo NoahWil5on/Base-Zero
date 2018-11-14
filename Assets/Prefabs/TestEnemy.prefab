@@ -112,10 +112,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   zombie: {fileID: 195339936104036582}
+  wanderRadius: 20
+  wanderTimer: 3
   timeBetweenAttacks: 1
   attackDamage: 200
   playerInRange: 0
-  timer: 0
+  distanceToSeekPlayer: 20
 --- !u!136 &136262607167855558
 CapsuleCollider:
   m_ObjectHideFlags: 1
