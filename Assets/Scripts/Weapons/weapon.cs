@@ -12,6 +12,7 @@ public class weapon : MonoBehaviour
     public int magSize = 10;
     public int currentAmmoCount = 0;
     public float reloadTime = 1.0f;
+    public int adsZoom = 30;
 
     public string currentAmmoType = "AR";
 
@@ -89,7 +90,7 @@ public class weapon : MonoBehaviour
             // gameObject.transform.localPosition = LerpVector(myPostion, new Vector3(0,-.216f,.7f),.2f);
             // gameObject.transform.localRotation = Quaternion.LookRotation(new Vector3(0,0,-1));
             animator.SetBool("ads", true);
-            fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV, 30, .2f);
+            fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV, adsZoom, .2f);
         }
         else
         {

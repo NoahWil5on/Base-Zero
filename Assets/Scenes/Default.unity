@@ -523,7 +523,6 @@ GameObject:
   m_Component:
   - component: {fileID: 90118269}
   - component: {fileID: 90118271}
-  - component: {fileID: 90118270}
   m_Layer: 2
   m_Name: weaponCamera
   m_TagString: Untagged
@@ -544,13 +543,6 @@ Transform:
   m_Father: {fileID: 1235928373}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &90118270
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 90118268}
-  m_Enabled: 1
 --- !u!20 &90118271
 Camera:
   m_ObjectHideFlags: 0
@@ -1806,6 +1798,7 @@ MonoBehaviour:
   magSize: 100
   currentAmmoCount: 100
   reloadTime: 2
+  adsZoom: 30
   currentAmmoType: AR
   fpsCam: {fileID: 1990563055}
   fpsController: {fileID: 405401753}
@@ -4925,6 +4918,7 @@ MonoBehaviour:
   magSize: 30
   currentAmmoCount: 30
   reloadTime: 1
+  adsZoom: 10
   currentAmmoType: AR
   fpsCam: {fileID: 1990563055}
   fpsController: {fileID: 405401753}
