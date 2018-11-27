@@ -67,7 +67,7 @@ public class SpawnHandler : MonoBehaviour {
 
             Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
             yield return new WaitForSeconds(timeBetweenSpawns);
-            Debug.Log("3hunnit");
+            //Debug.Log("3hunnit");
         }
         
             
