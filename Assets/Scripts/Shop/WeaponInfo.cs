@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponInfo : MonoBehaviour {
+
+
     public GameObject stock;
     public GameObject scope;
     public GameObject barrel;

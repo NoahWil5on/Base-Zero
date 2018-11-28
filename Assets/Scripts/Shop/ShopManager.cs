@@ -9,14 +9,13 @@ public class ShopManager : MonoBehaviour {
     //Main Shop Screen Array
     public GameObject categoryScreen;
 
-    public GameObject statFlavorScreen;
+    public GameObject[] weaponRefArray;
 
     public GameObject assaultRifleScreen;
 
 	// Use this for initialization
 	void Start () {
 
-        statFlavorScreen.SetActive(false);
         categoryScreen.SetActive(true);
         assaultRifleScreen.SetActive(false);
 	}
@@ -24,10 +23,7 @@ public class ShopManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if(assaultRifleScreen.activeSelf == true)
-        {
-            statFlavorScreen.SetActive(true);
-        }
+        
 		
 	}
 
@@ -38,5 +34,12 @@ public class ShopManager : MonoBehaviour {
     public void unhideScreen(GameObject screenToUnhide)
     {
         screenToUnhide.SetActive(true);
+    }
+    public void hideAllWeapons()
+    {
+        for(int i = 0; i < weaponRefArray.Length; i++)
+        {
+            weaponRefArray[i].SetActive(false);
+        }
     }
 }
