@@ -48,7 +48,7 @@ public class flavorTextHandler : MonoBehaviour {
             recoilText.text = "High";
             magSizeText.text = "30";
 
-            flavorText.text = "This gun is commonly used by jihadists and residents of Chicago, IL.";
+            flavorText.text = "Durable and powerful, this assault rifle is used by both military forces and terrorist forces alike.";
         }
         else if (m4Ref.activeSelf == true)
         {
@@ -61,7 +61,7 @@ public class flavorTextHandler : MonoBehaviour {
             recoilText.text = "Medium";
             magSizeText.text = "30";
 
-            flavorText.text = "army gun good";
+            flavorText.text = "The M4 carbine is one of the most reliable and field-tested rifles out there. Trust it.";
         }
         else if (battleRifleRef.activeSelf == true)
         {
@@ -74,7 +74,7 @@ public class flavorTextHandler : MonoBehaviour {
             recoilText.text = "Low";
             magSizeText.text = "20";
 
-            flavorText.text = "cool gun here";
+            flavorText.text = "This FAL battle rifle is used by UN forces around the globe. High impact firing mechanism combined with a high caliber makes this rifle strong.";
         }
         else
         {
