@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class QuestPopulator : MonoBehaviour {
 
+    
     public struct QuestProp
     {
         public string location, endgoal, name;
@@ -20,6 +22,8 @@ public class QuestPopulator : MonoBehaviour {
     private QuestProp[] misc;
     public QuestProp[] quests;
     // Use this for initialization
+
+    
     void Start () {
         heli = new QuestProp[5];
         nuke = new QuestProp[5];
@@ -50,6 +54,7 @@ public class QuestPopulator : MonoBehaviour {
         }
 	}
 	
+    
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -100,6 +105,16 @@ public class QuestPopulator : MonoBehaviour {
             quests[k] = misc[miscInd];
         }
         
+
+    }
+    public string[] getQuestNames()
+    {
+        string[] arr = new string[5];
+        for(int i = 0; i < arr.Length; i++)
+        {
+            arr[i] = quests[i].name;                    
+        }
+        return arr;
 
     }
 }
