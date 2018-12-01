@@ -62,31 +62,8 @@ public class QuestManager : MonoBehaviour {
         {
             string cur = questPopulatedArr[i];
 
-            //if(cur == "heli1")
-            //{
-            //    currentQuests[i] = questDatabase[0];
+        
 
-            //}
-            //else if(cur == "heli2")
-            //{
-            //    currentQuests[i] = questDatabase[1];
-
-            //}
-            //else if (cur == "heli3")
-            //{
-            //    currentQuests[i] = questDatabase[2];
-
-            //}
-            //else if (cur == "heli4")
-            //{
-            //    currentQuests[i] = questDatabase[3];
-
-            //}
-            //else if (cur == "heli5")
-            //{
-            //    currentQuests[i] = questDatabase[4];
-
-            //}
             switch (cur)
             {
                 case "heli1":
@@ -131,9 +108,7 @@ public class QuestManager : MonoBehaviour {
                 case "misc4":
                     currentQuests[i] = questDatabase[13];
                     break;
-                case "misc5":
-                    currentQuests[i] = questDatabase[14];
-                    break;
+                
 
 
 

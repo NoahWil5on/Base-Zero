@@ -38,10 +38,10 @@ public class QuestPopulator : MonoBehaviour {
         //fill nuke
 
         //fill misc
-        misc[0] = new QuestProp("train", "misc", "miscs");
-        misc[1] = new QuestProp("train", "misc", "misct");
-        misc[2] = new QuestProp("hq", "misc", "miscu");
-        misc[3] = new QuestProp("bunker", "misc", "miscv");
+        misc[0] = new QuestProp("train", "misc", "misc1");
+        misc[1] = new QuestProp("train", "misc", "misc2");
+        misc[2] = new QuestProp("hq", "misc", "misc3");
+        misc[3] = new QuestProp("bunker", "misc", "misc4");
         //if(Random.Range(0,1) == 0)
         //{
         //    
