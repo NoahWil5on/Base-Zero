@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainMenuMockup.unity
     guid: 55de2266f875a5245928a73b093b8434
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HQTEST.unity
     guid: 57afe4e3da394e74e8cda65731f459f0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Shoptest.unity
     guid: ecf26c73b2d13674d9ad1e2eee36659f
   m_configObjects: {}
