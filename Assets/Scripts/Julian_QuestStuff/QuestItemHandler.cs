@@ -6,11 +6,15 @@ using UnityEngine;
 public class QuestItemHandler : MonoBehaviour {
 
     public GameObject associatedQuestObject;
+    private GameObject mngrRef;
 
+    private QuestManager qm;
 
 	// Use this for initialization
 	void Start () {
-		
+
+        mngrRef = GameObject.FindGameObjectWithTag("gm");
+        qm = mngrRef.GetComponent<QuestManager>();
 	}
 	
 	// Update is called once per frame
@@ -20,11 +24,16 @@ public class QuestItemHandler : MonoBehaviour {
 	}
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(this.gameObject.tag == qm.sendCurQuestName())
         {
-            associatedQuestObject.GetComponent<Quest>().changeQuestStatus("Completed");
-            Destroy(this.gameObject);
+            if (other.gameObject.tag == "Player")
+            {
+                associatedQuestObject.GetComponent<Quest>().changeQuestStatus("Completed");
+                Destroy(this.gameObject);
+            }
+
         }
+       
     }
     
 }

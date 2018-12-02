@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Triggerer
-  - Grass
   - Stone
   - NormalAmmo
   - ScrapBox
@@ -13,6 +12,17 @@ TagManager:
   - EnemySpawner
   - ObjectiveText
   - curObjective
+  - gm
+  - Heli1
+  - Heli2
+  - Heli3
+  - Heli4
+  - Heli5
+  - Misc1
+  - Misc2
+  - Misc3
+  - Misc4
+  - Misc5
   layers:
   - Default
   - TransparentFX

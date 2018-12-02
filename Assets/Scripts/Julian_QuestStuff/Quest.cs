@@ -19,7 +19,7 @@ public class Quest : MonoBehaviour
         
         questStatus = "InProgress";
         UITextRef = GameObject.FindWithTag("ObjectiveText").GetComponentInChildren<Text>();
-        this.transform.gameObject.SetActive(false);
+        this.transform.gameObject.SetActive(true);
 
     }
 

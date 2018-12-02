@@ -46,16 +46,20 @@ public class QuestManager : MonoBehaviour {
                 Debug.Log(s[i]);
         }
 
-        ////currentQuests[questIndex].SetActive(true);
-        //string curQuestStatus = currentQuests[questIndex].GetComponent<Quest>().getQuestStatus();
-        //if (curQuestStatus == "Completed")
-        //{
-        //    currentQuests[questIndex].SetActive(true);
-        //    questIndex++;
-        //}
-		
+        currentQuests[questIndex].SetActive(true);
+        string curQuestStatus = currentQuests[questIndex].GetComponent<Quest>().getQuestStatus();
+        if (curQuestStatus == "Completed")
+        {
+            currentQuests[questIndex].SetActive(false);
+            questIndex++;
+        }
 
-	}
+
+    }
+    public string sendCurQuestName()
+    {
+        return currentQuests[questIndex].name;
+    }
     private void generateQuests(string[] questPopulatedArr)
     {
         for(int i = 0; i < questPopulatedArr.Length; i++)
