@@ -24,8 +24,6 @@ public class QuestManager : MonoBehaviour {
         //    Destroy(HQQuests[index]);
         //}
 
-
-
        // currentQuests[0].SetActive(true);
 		
 	}
