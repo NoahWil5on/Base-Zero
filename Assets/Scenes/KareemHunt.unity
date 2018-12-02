@@ -8127,6 +8127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 325566884}
+  - component: {fileID: 325566885}
   m_Layer: 0
   m_Name: Nuke3
   m_TagString: Untagged
@@ -8147,6 +8148,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &325566885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 325566883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1 &328325036
 GameObject:
   m_ObjectHideFlags: 0
@@ -13911,6 +13926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 565136959}
+  - component: {fileID: 565136960}
   m_Layer: 0
   m_Name: Heli3
   m_TagString: Untagged
@@ -13931,6 +13947,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &565136960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 565136958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1001 &571144074
 Prefab:
   m_ObjectHideFlags: 0
@@ -14800,6 +14830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 599214007}
+  - component: {fileID: 599214008}
   m_Layer: 0
   m_Name: Misc3
   m_TagString: Untagged
@@ -14820,6 +14851,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &599214008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 599214006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!4 &600130448 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 5e9e851c0e142814dac026a256ba2ac0,
@@ -14889,6 +14934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 602618814}
+  - component: {fileID: 602618815}
   m_Layer: 0
   m_Name: Misc5
   m_TagString: Untagged
@@ -14909,6 +14955,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &602618815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 602618813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1 &602718034
 GameObject:
   m_ObjectHideFlags: 0
@@ -25464,6 +25524,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 872269302}
+  - component: {fileID: 872269303}
   m_Layer: 0
   m_Name: Misc2
   m_TagString: Untagged
@@ -25484,6 +25545,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &872269303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 872269301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1 &880554552
 GameObject:
   m_ObjectHideFlags: 0
@@ -33221,6 +33296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1170961378}
+  - component: {fileID: 1170961379}
   m_Layer: 0
   m_Name: Misc4
   m_TagString: Untagged
@@ -33241,6 +33317,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1170961379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1170961377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1001 &1172145216
 Prefab:
   m_ObjectHideFlags: 0
@@ -34418,6 +34508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1227957989}
+  - component: {fileID: 1227957990}
   m_Layer: 0
   m_Name: Misc1
   m_TagString: Untagged
@@ -34438,6 +34529,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1227957990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227957988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1 &1230778197
 GameObject:
   m_ObjectHideFlags: 0
@@ -36099,6 +36204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1315469303}
+  - component: {fileID: 1315469304}
   m_Layer: 0
   m_Name: Nuke4
   m_TagString: Untagged
@@ -36119,6 +36225,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1315469304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1315469302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1001 &1319212007
 Prefab:
   m_ObjectHideFlags: 0
@@ -37578,6 +37698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1359866731}
+  - component: {fileID: 1359866732}
   m_Layer: 0
   m_Name: Heli5
   m_TagString: Untagged
@@ -37598,6 +37719,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1359866732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1359866730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1001 &1359895843
 Prefab:
   m_ObjectHideFlags: 0
@@ -38631,6 +38766,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1394725678}
+  - component: {fileID: 1394725679}
   m_Layer: 0
   m_Name: Nuke2
   m_TagString: Untagged
@@ -38651,6 +38787,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1394725679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1394725677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1 &1395364373
 GameObject:
   m_ObjectHideFlags: 0
@@ -41251,6 +41401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1467682905}
+  - component: {fileID: 1467682906}
   m_Layer: 0
   m_Name: Nuke5
   m_TagString: Untagged
@@ -41271,6 +41422,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1467682906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1467682904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1001 &1468528264
 Prefab:
   m_ObjectHideFlags: 0
@@ -43189,6 +43354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1557651650}
+  - component: {fileID: 1557651651}
   m_Layer: 0
   m_Name: Nuke1
   m_TagString: Untagged
@@ -43209,6 +43375,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1557651651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1557651649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1001 &1559339138
 Prefab:
   m_ObjectHideFlags: 0
@@ -54993,6 +55173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2093630002}
+  - component: {fileID: 2093630003}
   m_Layer: 0
   m_Name: Heli4
   m_TagString: Untagged
@@ -55013,6 +55194,20 @@ Transform:
   m_Father: {fileID: 409113978}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2093630003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2093630001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questText: 
+  UITextRef: {fileID: 0}
 --- !u!1 &2094153044
 GameObject:
   m_ObjectHideFlags: 0
