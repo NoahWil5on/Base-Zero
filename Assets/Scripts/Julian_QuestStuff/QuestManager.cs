@@ -12,9 +12,14 @@ public class QuestManager : MonoBehaviour {
     private bool questsWereAdded = true;
 
     private int questIndex = 0;
+
+    public GameObject navArrow;
+    private arrowHandler arrowHandler;
 	// Use this for initialization
 	void Start () {
 
+        DontDestroyOnLoad(this.gameObject);
+        arrowHandler = navArrow.GetComponent<arrowHandler>();
         qp = GetComponent<QuestPopulator>();
         //for(int i = 0; i < 3; i++)
         //{
@@ -50,6 +55,7 @@ public class QuestManager : MonoBehaviour {
         {
             currentQuests[questIndex].SetActive(false);
             questIndex++;
+            arrowHandler.onObjectiveChange();
         }
 
 
@@ -57,6 +63,10 @@ public class QuestManager : MonoBehaviour {
     public string sendCurQuestName()
     {
         return currentQuests[questIndex].name;
+    }
+    public string sendCurQuestLocation()
+    {
+        return currentQuests[questIndex].GetComponent<Quest>().location;
     }
     private void generateQuests(string[] questPopulatedArr)
     {

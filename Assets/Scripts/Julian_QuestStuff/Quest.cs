@@ -9,7 +9,7 @@ public class Quest : MonoBehaviour
     private string questStatus;
 
     public string questName;
-
+    public string location;
     public string questText;
     public Text UITextRef;
 

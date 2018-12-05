@@ -23,6 +23,8 @@ TagManager:
   - Misc3
   - Misc4
   - Misc5
+  - HQtoTrainyard
+  - Arrow
   layers:
   - Default
   - TransparentFX
