@@ -17,7 +17,11 @@ public class weapon : MonoBehaviour
     public float adsAccuracy = 1000.0f;
     public float accuracy = 100.0f;
     public float recoil = 1.5f;
+    public int bulletCount = 1;
+    public bool semiAuto = false;
+
     private float currentAccuracy = 1.0f;
+    private bool hasFired = false;
 
     public string currentAmmoType = "AR";
 
@@ -141,6 +145,7 @@ public class weapon : MonoBehaviour
             Shoot();
             fireTimer = 0;
         }
+        if(Input.GetButtonUp("Fire1")) hasFired = false;
         ADS();
     }
     void ADS()
@@ -170,6 +175,8 @@ public class weapon : MonoBehaviour
     void Shoot()
     {
         if (currentAmmoCount <= 0) return;
+        if (semiAuto && hasFired) return;
+        hasFired = true;
         secondMotionAnimator.SetBool("firing", true);
 
         muzzleFlash.Play();
@@ -179,15 +186,21 @@ public class weapon : MonoBehaviour
         currentAmmoCount--;
         RaycastHit hit;
 
-        Vector3 shootDirection = fpsCam.transform.forward;
-        shootDirection.x += Random.Range(-1000,1000) / (currentAccuracy * 1000.0f);
-        shootDirection.y += Random.Range(-1000,1000) / (currentAccuracy * 1000.0f);
-        shootDirection.z += Random.Range(-1000,1000) / (currentAccuracy * 1000.0f);
+        for(int i = 0; i < bulletCount; i++){
+            Vector3 shootDirection = fpsCam.transform.forward;
+            shootDirection.x += Random.Range(-1000,1000) / (currentAccuracy * 1000.0f);
+            shootDirection.y += Random.Range(-1000,1000) / (currentAccuracy * 1000.0f);
+            shootDirection.z += Random.Range(-1000,1000) / (currentAccuracy * 1000.0f);
 
-        shootDirection.Normalize();
+            shootDirection.Normalize();
 
-        if (Physics.Raycast(fpsCam.transform.position, shootDirection, out hit, range))
-        {
+            if (Physics.Raycast(fpsCam.transform.position, shootDirection, out hit, range))
+            {
+                DoBullet(hit);
+            }
+        }
+    }
+    void DoBullet(RaycastHit hit){
             Target target = hit.transform.GetComponent<Target>();
             GameObject myImpact = impactEffect;
             if (target != null)
@@ -206,7 +219,6 @@ public class weapon : MonoBehaviour
             }
             GameObject impact = Instantiate(myImpact, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impact, 1);
-        }
     }
     void Reload()
     {

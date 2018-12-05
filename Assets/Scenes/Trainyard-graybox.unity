@@ -5582,6 +5582,29 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -107.880005
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_MouseLook.smooth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_MouseLook.smoothTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114684210163759618, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: adsAccuracy
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114684210163759618, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: accuracy
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114213922015983404, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: adsZoom
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabAsset: 0

@@ -249,9 +249,11 @@ MonoBehaviour:
     clampVerticalRotation: 1
     MinimumX: -90
     MaximumX: 90
-    smooth: 0
-    smoothTime: 5
+    smooth: 1
+    smoothTime: 20
     lockCursor: 1
+    m_CharacterTargetRot: {x: 0, y: 0, z: 0, w: 0}
+    m_CameraTargetRot: {x: 0, y: 0, z: 0, w: 0}
   m_UseFovKick: 1
   m_FovKick:
     Camera: {fileID: 0}
@@ -5013,6 +5015,9 @@ MonoBehaviour:
   currentAmmoCount: 30
   reloadTime: 1
   adsZoom: 30
+  adsAccuracy: 1000
+  accuracy: 100
+  recoil: 1.5
   currentAmmoType: AR
   fpsCam: {fileID: 2000000}
   fpsController: {fileID: 100000}
@@ -5044,6 +5049,8 @@ MonoBehaviour:
   - {fileID: 1869546907706654}
   - {fileID: 1658766184594698}
   - {fileID: 0}
+  weaponHolder: {fileID: 0}
+  allWeapons: []
   currentWeapon: 0
 --- !u!114 &114684210163759618
 MonoBehaviour:
@@ -5064,6 +5071,9 @@ MonoBehaviour:
   currentAmmoCount: 100
   reloadTime: 2
   adsZoom: 30
+  adsAccuracy: 1000
+  accuracy: 100
+  recoil: 1.5
   currentAmmoType: AR
   fpsCam: {fileID: 2000000}
   fpsController: {fileID: 100000}

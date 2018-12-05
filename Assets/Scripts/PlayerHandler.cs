@@ -36,6 +36,7 @@ public class PlayerHandler : MonoBehaviour {
         currentPlayerHealth = startingPlayerHealth;
 	}
     void Update(){
+        if(Input.GetButton("Fire2")) return;
         if(Input.GetKeyDown("1")){
             SwitchWeapon(0);
         }else if(Input.GetKeyDown("2")){
