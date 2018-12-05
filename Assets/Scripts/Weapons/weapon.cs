@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+ using UnityStandardAssets.Characters.FirstPerson;
 
 public class weapon : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class weapon : MonoBehaviour
     public int currentAmmoCount = 0;
     public float reloadTime = 1.0f;
     public int adsZoom = 30;
+    public float adsAccuracy = 1000.0f;
+    public float accuracy = 100.0f;
+    public float recoil = 1.5f;
+    private float currentAccuracy = 1.0f;
 
     public string currentAmmoType = "AR";
 
@@ -36,16 +41,77 @@ public class weapon : MonoBehaviour
     private Vector3 localPos = new Vector3();
     private Quaternion localRot = new Quaternion();
 
+    private int myIterations = 0;
+
+    private bool[] myUpgrades = {false, false, false, false};
+
     void Start()
     {
-        //localPos = gameObject.transform.localPosition;
-        //localRot = gameObject.transform.localRotation;
+        FindStats(this.gameObject);
+        currentAccuracy = accuracy;
     }
+    void FindStats(GameObject objToSearch){
+        if(myIterations > 30) return;
 
+        myIterations++;
+        Transform[] children = this.GetComponentsInChildren<Transform>();
+
+        for(int i = 0; i < children.Length; i++){
+            if(children[i].GetComponent<stock>() != null){
+                if(children[i].GetComponent<stock>().upgrade && myUpgrades[0]){
+                    print("upgraded");
+                }else if(children[i].GetComponent<stock>().upgrade){
+                    children[i].gameObject.SetActive(false);
+                }
+
+                if(!children[i].GetComponent<stock>().upgrade && !myUpgrades[0]){
+                    print("unUpgraded");
+                }else if(!children[i].GetComponent<stock>().upgrade){
+                    children[i].gameObject.SetActive(false);
+                }
+            }else if(children[i].GetComponent<magazine>() != null){
+                if(children[i].GetComponent<magazine>().upgrade && myUpgrades[0]){
+                    print("upgraded");
+                }else if(children[i].GetComponent<magazine>().upgrade){
+                    children[i].gameObject.SetActive(false);
+                }
+
+                if(!children[i].GetComponent<magazine>().upgrade && !myUpgrades[0]){
+                    print("unUpgraded");
+                }else if(!children[i].GetComponent<magazine>().upgrade){
+                    children[i].gameObject.SetActive(false);
+                }
+            }else if(children[i].GetComponent<scope>() != null){
+                if(children[i].GetComponent<scope>().upgrade && myUpgrades[0]){
+                    print("upgraded");
+                }else if(children[i].GetComponent<scope>().upgrade){
+                    children[i].gameObject.SetActive(false);
+                }
+
+                if(!children[i].GetComponent<scope>().upgrade && !myUpgrades[0]){
+                    print("unUpgraded");
+                }else if(!children[i].GetComponent<scope>().upgrade){
+                    children[i].gameObject.SetActive(false);
+                }
+            }else if(children[i].GetComponent<barrel>() != null){
+                if(children[i].GetComponent<barrel>().upgrade && myUpgrades[0]){
+                    print("upgraded");
+                }else if(children[i].GetComponent<barrel>().upgrade){
+                    children[i].gameObject.SetActive(false);
+                }
+
+                if(!children[i].GetComponent<barrel>().upgrade && !myUpgrades[0]){
+                    print("unUpgraded");
+                }else if(!children[i].GetComponent<barrel>().upgrade){
+                    children[i].gameObject.SetActive(false);
+                }
+            }
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        //currentAmmoCount = gameManager.GetComponent<GameManager>().CheckAmmo(currentAmmoType);
+        if(Input.GetKeyDown(KeyCode.U)) myUpgrades[0] = !myUpgrades[0];
 
         fireTimer += Time.deltaTime;
         reloadTimer += Time.deltaTime;
@@ -79,27 +145,24 @@ public class weapon : MonoBehaviour
     }
     void ADS()
     {
-        //Vector3 myPostion = gameObject.transform.localPosition;
         float myFOV = fpsCam.GetComponent<Camera>().fieldOfView;
         if (Input.GetButton("Fire2"))
         {
+            currentAccuracy = adsAccuracy;
             if(scopeImage){
                 scopeImage.SetActive(true);
                 weaponCamera.SetActive(false);
             }
-            // gameObject.transform.localPosition = LerpVector(myPostion, new Vector3(0,-.216f,.7f),.2f);
-            // gameObject.transform.localRotation = Quaternion.LookRotation(new Vector3(0,0,-1));
             animator.SetBool("ads", true);
             fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV, adsZoom, .2f);
         }
         else
         {
+            currentAccuracy = accuracy;
             if(scopeImage){
                 scopeImage.SetActive(false);
                 weaponCamera.SetActive(true);
             }
-            // gameObject.transform.localPosition = LerpVector(myPostion, localPos, .2f);
-            // gameObject.transform.localRotation = localRot;
             animator.SetBool("ads", false);
             fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV, 60, .2f);
         }
@@ -109,13 +172,21 @@ public class weapon : MonoBehaviour
         if (currentAmmoCount <= 0) return;
         secondMotionAnimator.SetBool("firing", true);
 
-        //gameManager.GetComponent<GameManager>().AddAmmo(currentAmmoType, -1);
-
         muzzleFlash.Play();
+        fpsController.GetComponent<FirstPersonController>().m_MouseLook.m_CameraTargetRot *= Quaternion.Euler (-recoil, 0f, 0f);
+        //fpsCam.transform.Rotate(fpsCam.transform.right, 5.0f);
         fireSound.GetComponent<AudioSource>().Play(0);
         currentAmmoCount--;
         RaycastHit hit;
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+
+        Vector3 shootDirection = fpsCam.transform.forward;
+        shootDirection.x += Random.Range(-1000,1000) / (currentAccuracy * 1000.0f);
+        shootDirection.y += Random.Range(-1000,1000) / (currentAccuracy * 1000.0f);
+        shootDirection.z += Random.Range(-1000,1000) / (currentAccuracy * 1000.0f);
+
+        shootDirection.Normalize();
+
+        if (Physics.Raycast(fpsCam.transform.position, shootDirection, out hit, range))
         {
             Target target = hit.transform.GetComponent<Target>();
             GameObject myImpact = impactEffect;
@@ -156,14 +227,5 @@ public class weapon : MonoBehaviour
 
         reloadTimer = 0;
     }
-    Vector3 LerpVector(Vector3 vec1, Vector3 vec2, float amount)
-    {
-        amount = Mathf.Clamp(amount, 0f, 1f);
 
-        float x = Mathf.Lerp(vec1.x, vec2.x, amount);
-        float y = Mathf.Lerp(vec1.y, vec2.y, amount);
-        float z = Mathf.Lerp(vec1.z, vec2.z, amount);
-
-        return new Vector3(x, y, z);
-    }
 }

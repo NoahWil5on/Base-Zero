@@ -10,7 +10,11 @@ public class PlayerHandler : MonoBehaviour {
     private int currentPlayerHealth = 1000;
     public GameObject gameManager;
     public GameObject[] playerWeapons = new GameObject[3];
+    public Transform weaponHolder;
+    public List<GameObject> allWeapons; 
     public int currentWeapon = 0;
+
+    private int allWeaponCounter = 0;
 
     // Use this for initialization
 
@@ -39,6 +43,7 @@ public class PlayerHandler : MonoBehaviour {
         }else if(Input.GetKeyDown("3")){
             SwitchWeapon(2);
         }
+        WeaponSwitch();
     }
     private void SwitchWeapon(int weaponNumber){
         if(currentWeapon == weaponNumber ||
@@ -76,6 +81,26 @@ public class PlayerHandler : MonoBehaviour {
         {
             gameManager.GetComponent<GameManager>().AddCash(other.GetComponent<PickupHandler>().smallCashAmount);
             Destroy(other.gameObject);            
+        }
+    }
+    private void WeaponSwitch(){
+        if(Input.GetKeyDown(KeyCode.N)){
+            Destroy(playerWeapons[0]);
+            GameObject newWeapon = Instantiate(allWeapons[allWeaponCounter], Vector3.zero, Quaternion.identity, weaponHolder);
+            newWeapon.transform.rotation = weaponHolder.transform.rotation;
+            newWeapon.transform.position = weaponHolder.transform.position;
+            newWeapon.transform.localRotation = Quaternion.Euler(0,180,0);
+            newWeapon.transform.localPosition = new Vector3(0,0,.5f);
+            playerWeapons[0] = newWeapon;
+
+            for(int i = 0; i < playerWeapons.Length; i++){
+                if(!playerWeapons[i]) continue;
+                playerWeapons[i].SetActive(false);
+            }
+            playerWeapons[currentWeapon].SetActive(true);
+
+            allWeaponCounter++;
+            if(allWeaponCounter >= allWeapons.Count) allWeaponCounter = 0;
         }
     }
 }
