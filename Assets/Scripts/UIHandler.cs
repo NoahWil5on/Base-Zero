@@ -22,6 +22,7 @@ public class UIHandler : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         resourceMenuBackground.SetActive(false);
+        DontDestroyOnLoad(this.gameObject);
 	}
 	
 	// Update is called once per frame

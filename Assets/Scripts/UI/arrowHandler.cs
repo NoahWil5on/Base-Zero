@@ -1,44 +1,140 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class arrowHandler : MonoBehaviour
 {
 
-    public GameObject goTarget;
-    public GameObject player;
+    private GameObject goTarget;
+    public GameObject controller;
+
+    private GameObject mngrRef;
+
+    private QuestManager qm;
+
+    private bool flag = true;
+
+    void Start()
+    {
+        mngrRef = GameObject.FindGameObjectWithTag("gm");
+        qm = mngrRef.GetComponent<QuestManager>();
+        
+    }
 
     void Update()
     {
-        PositionArrow();
-    }
+        if (flag)
+        {
+            onObjectiveChange();
+            flag = false;
+        }
 
-    void PositionArrow()
+        Vector3 tmpVec = controller.transform.InverseTransformPoint(goTarget.transform.position);
+
+        float angtoTar = Mathf.Atan2(tmpVec.x, tmpVec.z) * Mathf.Rad2Deg;
+        angtoTar += 180.0f;
+        this.transform.localEulerAngles = new Vector3(90, angtoTar, 0);
+    }
+    public void onObjectiveChange()
     {
-        //renderer.enabled = false;
+        Scene curScene = SceneManager.GetActiveScene();
+        string sceneName = curScene.name;
 
-        Vector3 v3Pos = Camera.main.WorldToViewportPoint(goTarget.transform.position);
+        if (sceneName == "KareemHunt")
+        {
+            if (qm.sendCurQuestLocation() == "HQ")
+            {
+                switch (qm.sendCurQuestName())
+                {
+                   
+                    case "Heli2":
+                        goTarget = GameObject.FindGameObjectWithTag("Heli2");
+                        break;
+                  
+                    case "Heli4":
+                        goTarget = GameObject.FindGameObjectWithTag("Heli4");
+                        break;
+                    case "Heli5":
+                        goTarget = GameObject.FindGameObjectWithTag("Heli5");
+                        break;
+                    case "Nuke1":
+                        goTarget = GameObject.FindGameObjectWithTag("Nuke1");
+                        break;
+                    
+                    case "Nuke3":
+                        goTarget = GameObject.FindGameObjectWithTag("Nuke3");
+                        break;
+                   
+                    case "Misc2":
+                        goTarget = GameObject.FindGameObjectWithTag("Misc2");
+                        break;
+                    
+                    case "Misc4":
+                        goTarget = GameObject.FindGameObjectWithTag("Misc4");
+                        break;
+                    case "Misc5":
+                        goTarget = GameObject.FindGameObjectWithTag("Misc5");
+                        break;
 
-        if (v3Pos.z < Camera.main.nearClipPlane)
-            return;  // Object is behind the camera
+                    default:
+                        break;
 
-        if (v3Pos.x >= 0.0f && v3Pos.x <= 1.0f && v3Pos.y >= 0.0f && v3Pos.y <= 1.0f)
-            return; // Object center is visible
+                }
+               
+            }
+            else if (qm.sendCurQuestLocation() == "Trainyard")
+            {
+                goTarget = GameObject.FindGameObjectWithTag("HQtoTrainyard");
+            }
 
-        //renderer.enabled = true;
-        v3Pos.x -= 0.5f;  // Translate to use center of viewport
-        v3Pos.y -= 0.5f;
-        v3Pos.z = 0;      // I think I can do this rather than do a 
-                          //   a full projection onto the plane
+        }
+        else if(sceneName == "Trainyard-graybox")
+        {
+            if (qm.sendCurQuestLocation() == "Trainyard")
+            {
+                switch (qm.sendCurQuestName())
+                {
 
-        float fAngle = Mathf.Atan2(v3Pos.x, v3Pos.y);
-        transform.localEulerAngles = new Vector3(0.0f, 0.0f, -fAngle * Mathf.Rad2Deg);
+                    case "Heli1":
+                        goTarget = GameObject.FindGameObjectWithTag("Heli1");
+                        break;
 
-        v3Pos.x = 0.5f * Mathf.Sin(fAngle) + 0.5f;  // Place on ellipse touching 
-        v3Pos.y = 0.5f * Mathf.Cos(fAngle) + 0.5f;  //   side of viewport
-        v3Pos.z = Camera.main.nearClipPlane + 0.01f;  // Looking from neg to pos Z;
-        transform.position = Camera.main.ViewportToWorldPoint(v3Pos);
+                    case "Heli3":
+                        goTarget = GameObject.FindGameObjectWithTag("Heli3");
+                        break;
+                    
+                    case "Nuke2":
+                        goTarget = GameObject.FindGameObjectWithTag("Nuke2");
+                        break;
+
+                    case "Nuke4":
+                        goTarget = GameObject.FindGameObjectWithTag("Nuke4");
+                        break;
+                    case "Nuke5":
+                        goTarget = GameObject.FindGameObjectWithTag("Nuke5");
+                        break;
+                    case "Misc1":
+                        goTarget = GameObject.FindGameObjectWithTag("Misc1");
+                        break;
+
+                    case "Misc3":
+                        goTarget = GameObject.FindGameObjectWithTag("Misc3");
+                        break;
+                   
+                    default:
+                        break;
+
+                }
+
+            }
+            else if (qm.sendCurQuestLocation() == "HQ")
+            {
+                goTarget = GameObject.FindGameObjectWithTag("TrainyardtoHQ");
+            }
+        }
     }
+
 }
 
