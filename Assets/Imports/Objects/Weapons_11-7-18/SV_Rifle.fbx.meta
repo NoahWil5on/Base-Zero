@@ -82,7 +82,27 @@ ModelImporter:
     4300020: Barrel_Long
     4300022: AK_Platform:Kobra
     4300024: AK_Platform:PSO
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AK_Platform_AK_Platform_Accesories_mat
+    second: {fileID: 2100000, guid: c8ab7d862438ec243a55b890cc6fe5a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AK_Platform_AK_Platforms_Magazine_Plum_mat
+    second: {fileID: 2100000, guid: efab720df40645f4d9b7323c5a08f703, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SV_Rifle_Polymer_mat
+    second: {fileID: 2100000, guid: 22d0d9a555afcf943a898366be5aa39e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SV_Rifle_mat
+    second: {fileID: 2100000, guid: 267bab66aebc5ae42b025ea393365d7f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
