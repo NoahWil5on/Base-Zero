@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WeaponInfo : MonoBehaviour {
 
@@ -13,10 +14,23 @@ public class WeaponInfo : MonoBehaviour {
     public GameObject scopeUpgrade;
     public GameObject barrelUpgrade;
     public GameObject magazineUpgrade;
+    public GameObject stockButton;
+    public GameObject scopeButton;
+    public GameObject barrelButton;
+    public GameObject magazineButton;
     public bool stockUpgraded = false;
-
-	// Use this for initialization
-	void Start () {
+    public bool scopeUpgraded = false;
+    public bool barrelUpgraded = false;
+    public bool magazineUpgraded = false;
+    public int stockCost = 150;
+    public int scopeCost = 250;
+    public int barrelCost = 150;
+    public int magazineCost = 300;
+    public int weaponCost = 1200;
+    public bool purchased = false;
+    public string name;
+    // Use this for initialization
+    void Start () {
         stockUpgrade.SetActive(false);
         scopeUpgrade.SetActive(false);
         barrelUpgrade.SetActive(false);
@@ -37,16 +51,8 @@ public class WeaponInfo : MonoBehaviour {
         attachmentToUnHide.SetActive(true);
     }
 
-    public void purchaseAttachment(string attachment)
-    {
-        switch (attachment)
-        {
-            case "stock":
-                stockUpgraded = true;                  
-                break;
-            default:
-                break;
-        }
-    }
+    
+
+
 
 }
