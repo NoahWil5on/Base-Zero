@@ -68,6 +68,43 @@ public class QuestManager : MonoBehaviour {
     {
         return currentQuests[questIndex].GetComponent<Quest>().location;
     }
+    public GameObject returnQuestGO(string tag)
+    {
+        switch (tag)
+        {
+            case "Heli1":
+                return questDatabase[0];
+            case "Heli2":
+                return questDatabase[1];
+            case "Heli3":
+                return questDatabase[2];
+            case "Heli4":
+                return questDatabase[3];
+            case "Heli5":
+                return questDatabase[4];
+            case "Nuke1":
+                return questDatabase[5];
+            case "Nuke2":
+                return questDatabase[6];
+            case "Nuke3":
+                return questDatabase[7];
+            case "Nuke4":
+                return questDatabase[8];
+            case "Nuke5":
+                return questDatabase[9];
+            case "Misc1":
+                return questDatabase[10];
+            case "Misc2":
+                return questDatabase[11];
+            case "Misc3":
+                return questDatabase[12];
+            case "Misc4":
+                return questDatabase[13];
+            case "Misc5":
+                return questDatabase[14];
+        }
+        return null;
+    }
     private void generateQuests(string[] questPopulatedArr)
     {
         for(int i = 0; i < questPopulatedArr.Length; i++)
