@@ -22,6 +22,8 @@ public class weapon : MonoBehaviour
 
     private float currentAccuracy = 1.0f;
     private bool hasFired = false;
+    private bool willReset1 = false;
+    private bool willReset2 = false;
 
     public string currentAmmoType = "AR";
 
@@ -142,10 +144,17 @@ public class weapon : MonoBehaviour
         }
         if (Input.GetButton("Fire1") && fireTimer >= 1 / fireRate && reloadTimer > reloadTime + 0.3f)
         {
+            if(semiAuto && hasFired) return;
             Shoot();
             fireTimer = 0;
         }
-        if(Input.GetButtonUp("Fire1")) hasFired = false;
+        if( fireTimer >= 1 / fireRate){
+            willReset1 = true;
+        }
+        if(Input.GetButtonUp("Fire1")){
+            willReset2 = true;
+        }
+        if(willReset1 && willReset2) hasFired = false;
         ADS();
     }
     void ADS()
@@ -175,8 +184,9 @@ public class weapon : MonoBehaviour
     void Shoot()
     {
         if (currentAmmoCount <= 0) return;
-        if (semiAuto && hasFired) return;
         hasFired = true;
+        willReset1 = false;
+        willReset2 = false;
         secondMotionAnimator.SetBool("firing", true);
 
         muzzleFlash.Play();
