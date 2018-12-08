@@ -25,12 +25,13 @@ public class arrowHandler : MonoBehaviour
 
     void Update()
     {
-        if (flag)
-        {
+        //if (flag)
+        //{
             onObjectiveChange();
-            flag = false;
-        }
+        //    flag = false;
+        //}
 
+        Debug.Log(goTarget.name);
         Vector3 tmpVec = controller.transform.InverseTransformPoint(goTarget.transform.position);
 
         float angtoTar = Mathf.Atan2(tmpVec.x, tmpVec.z) * Mathf.Rad2Deg;
@@ -90,7 +91,7 @@ public class arrowHandler : MonoBehaviour
             }
 
         }
-        else if(sceneName == "Trainyard-graybox")
+        else if(sceneName == "ThisIsItChief")
         {
             if (qm.sendCurQuestLocation() == "Trainyard")
             {

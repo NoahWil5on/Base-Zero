@@ -15,8 +15,9 @@ public class sceneSwitcher : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        arrow = GameObject.FindGameObjectWithTag("Arrow");
+        arrowScr = arrow.GetComponent<arrowHandler>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
@@ -35,7 +36,7 @@ public class sceneSwitcher : MonoBehaviour {
 
                 }
             }
-            else if(sceneName == "Trainyard-graybox")
+            else if(sceneName == "ThisIsItChief")
             {
                 if (this.gameObject.tag == "TrainyardtoHQ")
                 {

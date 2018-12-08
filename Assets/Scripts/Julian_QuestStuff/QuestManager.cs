@@ -35,7 +35,8 @@ public class QuestManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+       
+        navArrow = GameObject.FindGameObjectWithTag("Arrow");
         if (questsWereAdded)
         {
             generateQuests(qp.getQuestNames());
@@ -100,8 +101,7 @@ public class QuestManager : MonoBehaviour {
                 return questDatabase[12];
             case "Misc4":
                 return questDatabase[13];
-            case "Misc5":
-                return questDatabase[14];
+         
         }
         return null;
     }

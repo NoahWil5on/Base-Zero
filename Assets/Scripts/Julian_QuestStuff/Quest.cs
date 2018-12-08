@@ -18,7 +18,7 @@ public class Quest : MonoBehaviour
     {
         
         questStatus = "InProgress";
-        UITextRef = GameObject.FindWithTag("ObjectiveText").GetComponentInChildren<Text>();
+       
         this.transform.gameObject.SetActive(true);
 
     }
@@ -26,7 +26,8 @@ public class Quest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(questStatus == "InProgress")
+        UITextRef = GameObject.FindWithTag("ObjectiveText").GetComponentInChildren<Text>();
+        if (questStatus == "InProgress")
         {
             UITextRef.text = questText;
 

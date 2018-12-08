@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class UIHandler : MonoBehaviour {
 
-    public GameObject player;
-    public GameObject gameManager;
+    private GameObject player;
+    private GameObject gameManager;
     private int playerHealth;
     private int playerAmmo;
     private int playerScraps;
@@ -21,14 +21,16 @@ public class UIHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        player = GameObject.FindGameObjectWithTag("Player");
+        gameManager = GameObject.FindGameObjectWithTag("gm");
         resourceMenuBackground.SetActive(false);
-        DontDestroyOnLoad(this.gameObject);
+       // DontDestroyOnLoad(this.gameObject);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-
+        player = GameObject.FindGameObjectWithTag("Player");
         if (Input.GetKey(KeyCode.Tab))
         {
             resourceMenuBackground.SetActive(true);

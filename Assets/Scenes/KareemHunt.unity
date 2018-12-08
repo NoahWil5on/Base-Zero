@@ -5672,7 +5672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478300f26d01f7c45b6fe0e793236b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associatedQuestObject: {fileID: 1170961377}
 --- !u!65 &216472367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6554,7 +6553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478300f26d01f7c45b6fe0e793236b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associatedQuestObject: {fileID: 0}
 --- !u!65 &244962124
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14711,11 +14709,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4207052728320904, guid: 80aafbd51d47add4f8b1e082ec6b610d,
     type: 2}
   m_PrefabInternal: {fileID: 602128095}
---- !u!1 &602618813 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1903967736083102, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1546586050}
 --- !u!1 &602718034
 GameObject:
   m_ObjectHideFlags: 0
@@ -25160,11 +25153,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4207052728320904, guid: 80aafbd51d47add4f8b1e082ec6b610d,
     type: 2}
   m_PrefabInternal: {fileID: 870874443}
---- !u!1 &872269301 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1802151753979166, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1546586050}
 --- !u!1 &880554552
 GameObject:
   m_ObjectHideFlags: 0
@@ -25882,7 +25870,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478300f26d01f7c45b6fe0e793236b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associatedQuestObject: {fileID: 602618813}
 --- !u!65 &905052763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31391,11 +31378,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1109222178 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1947509206174484, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1546586050}
 --- !u!1 &1109993456
 GameObject:
   m_ObjectHideFlags: 0
@@ -31921,7 +31903,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478300f26d01f7c45b6fe0e793236b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associatedQuestObject: {fileID: 1109222178}
 --- !u!65 &1129136202
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33005,11 +32986,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1170553956}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1170961377 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1697396823726886, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1546586050}
 --- !u!1001 &1172145216
 Prefab:
   m_ObjectHideFlags: 0
@@ -37170,11 +37146,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 27.418482, y: 6.775124, z: 13.530948}
   m_Center: {x: -0.0000004768373, y: -0.00000059604645, z: -0.00002861023}
---- !u!1 &1359866730 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1243630274216376, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1546586050}
 --- !u!1001 &1359895843
 Prefab:
   m_ObjectHideFlags: 0
@@ -43824,7 +43795,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478300f26d01f7c45b6fe0e793236b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associatedQuestObject: {fileID: 1359866730}
 --- !u!65 &1617505471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46379,7 +46349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478300f26d01f7c45b6fe0e793236b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associatedQuestObject: {fileID: 2093630001}
 --- !u!65 &1719988646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46501,10 +46470,6 @@ Prefab:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1103410095}
-    - target: {fileID: 1758399884802124, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_TagString
-      value: Arrow
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabAsset: 0
@@ -50893,7 +50858,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478300f26d01f7c45b6fe0e793236b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associatedQuestObject: {fileID: 872269301}
 --- !u!65 &1906724810
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54552,11 +54516,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4207052728320904, guid: 80aafbd51d47add4f8b1e082ec6b610d,
     type: 2}
   m_PrefabInternal: {fileID: 2092156863}
---- !u!1 &2093630001 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1975023312074896, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1546586050}
 --- !u!1 &2094153044
 GameObject:
   m_ObjectHideFlags: 0
