@@ -26,6 +26,8 @@ TagManager:
   - HQtoTrainyard
   - Arrow
   - TrainyardtoHQ
+  - scopeImage
+  - wp
   layers:
   - Default
   - TransparentFX

@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
- using UnityStandardAssets.Characters.FirstPerson;
+using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.UI;
 
 public class weapon : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class weapon : MonoBehaviour
     public float fireRate = 5f;
     public float impactForce = 200f;
     public int magSize = 10;
-    public int currentAmmoCount = 0;
+    public int currentAmmoCount = 30;
     public float reloadTime = 1.0f;
     public int adsZoom = 30;
     public float adsAccuracy = 1000.0f;
@@ -26,6 +27,7 @@ public class weapon : MonoBehaviour
     private bool willReset2 = false;
 
     public string currentAmmoType = "AR";
+    public string scopeName = "defualt";
 
     public Camera fpsCam;
     public GameObject fpsController;
@@ -34,7 +36,7 @@ public class weapon : MonoBehaviour
     public GameObject impactEffect;
     public GameObject blood;
     public GameObject bulletHole;
-    public GameObject scopeImage;
+    private GameObject scopeImage;
     public GameObject weaponCamera;
 
     public AudioSource fireSound;
@@ -53,6 +55,15 @@ public class weapon : MonoBehaviour
 
     void Start()
     {
+        gameManager = GameObject.FindGameObjectWithTag("gm");
+        GameObject[] scopeImages = GameObject.FindGameObjectsWithTag("scopeImage");
+        for(int i = 0; i < scopeImages.Length; i++){
+            if(scopeImages[i].GetComponent<ScopeOverlay>() && scopeImages[i].GetComponent<ScopeOverlay>().scopeName == scopeName){
+                scopeImage = scopeImages[i];
+                print("found stuff");
+            }
+        }
+
         FindStats(this.gameObject);
         currentAccuracy = accuracy;
     }
@@ -164,7 +175,7 @@ public class weapon : MonoBehaviour
         {
             currentAccuracy = adsAccuracy;
             if(scopeImage){
-                scopeImage.SetActive(true);
+                scopeImage.GetComponent<Image>().enabled = true;
                 weaponCamera.SetActive(false);
             }
             animator.SetBool("ads", true);
@@ -174,7 +185,7 @@ public class weapon : MonoBehaviour
         {
             currentAccuracy = accuracy;
             if(scopeImage){
-                scopeImage.SetActive(false);
+                scopeImage.GetComponent<Image>().enabled = false;
                 weaponCamera.SetActive(true);
             }
             animator.SetBool("ads", false);
