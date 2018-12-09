@@ -1567,7 +1567,7 @@ GameObject:
   - component: {fileID: 114928418575926200}
   m_Layer: 2
   m_Name: NavArrow
-  m_TagString: Arrow
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6648,15 +6648,9 @@ MonoBehaviour:
   currentAmmoCount: 100
   reloadTime: 2
   adsZoom: 30
-<<<<<<< HEAD
-  adsAccuracy: 1000
-  accuracy: 100
-  recoil: 1.5
-=======
   adsAccuracy: 35
   accuracy: 15
   recoil: 2
->>>>>>> 9359d0271db91aca4a689a473f64d98cdd7a4c98
   bulletCount: 1
   semiAuto: 0
   currentAmmoType: AR
