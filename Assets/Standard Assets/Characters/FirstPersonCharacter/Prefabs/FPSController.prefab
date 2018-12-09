@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 4769263046839242}
   - component: {fileID: 33236163847602074}
   - component: {fileID: 23400881720521358}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Stock_Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 4686457119170122}
   - component: {fileID: 33423747693963438}
   - component: {fileID: 23969205084010090}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Magazine_Shotgun_Standard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 4335389118060140}
   - component: {fileID: 33797040303044908}
   - component: {fileID: 23908882626332230}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Handguard_Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 4228889082616418}
   - component: {fileID: 33012475260439558}
   - component: {fileID: 23896799867934884}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -684,7 +684,7 @@ GameObject:
   - component: {fileID: 4665849129468384}
   - component: {fileID: 33489966824772028}
   - component: {fileID: 23199606855846864}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Handguard_Shotgun_Polymer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -735,7 +735,7 @@ GameObject:
   - component: {fileID: 4605831603627154}
   - component: {fileID: 33806368253538002}
   - component: {fileID: 23514901357710068}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Receiver_Magazine_Release
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -752,7 +752,7 @@ GameObject:
   - component: {fileID: 4964640232842748}
   - component: {fileID: 33972818812644490}
   - component: {fileID: 23537762510879096}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Barrel_Saiga
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -803,7 +803,7 @@ GameObject:
   - component: {fileID: 4845562966514568}
   - component: {fileID: 33015129134134298}
   - component: {fileID: 23275928907794886}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Stock_full_Polymer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -853,13 +853,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4127696772824730}
   - component: {fileID: 114804857774050968}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: SG_Shotgun
   m_TagString: wp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1430085617845236
 GameObject:
   m_ObjectHideFlags: 1
@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 4413284447541640}
   - component: {fileID: 33267073019528788}
   - component: {fileID: 23458359205533868}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Kobra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -949,7 +949,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4740389167146176}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Polymer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1034,7 +1034,7 @@ GameObject:
   - component: {fileID: 4428909456486722}
   - component: {fileID: 33768959211866462}
   - component: {fileID: 23925388430006596}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1051,7 +1051,7 @@ GameObject:
   - component: {fileID: 4069435994935362}
   - component: {fileID: 33554785234736510}
   - component: {fileID: 23753497519566596}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Magazine_Shotgun_Drum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1066,7 +1066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4537841648540220}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Barrels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1215,7 +1215,7 @@ GameObject:
   - component: {fileID: 4382809310307276}
   - component: {fileID: 33827366086919352}
   - component: {fileID: 23859219042002688}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1232,7 +1232,7 @@ GameObject:
   - component: {fileID: 4627939174931018}
   - component: {fileID: 33383354693827308}
   - component: {fileID: 23833234532662680}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Barrel_Saiga_Short
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1281,7 +1281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4474878672198234}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Handguard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1313,7 +1313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4398388249363836}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Sights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1335,7 +1335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1658924675501650
 GameObject:
   m_ObjectHideFlags: 1
@@ -1346,7 +1346,7 @@ GameObject:
   - component: {fileID: 4902814064751748}
   - component: {fileID: 33288654542864320}
   - component: {fileID: 23741168026333984}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Grip_Polymer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1363,7 +1363,7 @@ GameObject:
   - component: {fileID: 4104461659245516}
   - component: {fileID: 33863611400880708}
   - component: {fileID: 23246971178465574}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Ironsights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1431,7 +1431,7 @@ GameObject:
   - component: {fileID: 4826852052262096}
   - component: {fileID: 33863189019512098}
   - component: {fileID: 23003548624705760}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Magazine_Shotgun_Extended
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1597,7 +1597,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4272395610089240}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1714,7 +1714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4267493063468280}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Stocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1762,7 +1762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4266764735531200}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1839,7 +1839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4938361934708284}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Magazines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1873,7 +1873,7 @@ GameObject:
   - component: {fileID: 4623841413377984}
   - component: {fileID: 33419505329454698}
   - component: {fileID: 23018044769016900}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6587,14 +6587,14 @@ MonoBehaviour:
   magSize: 30
   currentAmmoCount: 30
   reloadTime: 1
-  adsZoom: 30
-  adsAccuracy: 1000
-  accuracy: 100
-  recoil: 1.5
+  adsZoom: 10
+  adsAccuracy: 500
+  accuracy: 80
+  recoil: 2
   bulletCount: 1
   semiAuto: 0
   currentAmmoType: AR
-  scopeName: default
+  scopeName: scope_default
   fpsCam: {fileID: 2000000}
   fpsController: {fileID: 100000}
   gameManager: {fileID: 0}
@@ -6621,13 +6621,14 @@ MonoBehaviour:
   startingPlayerHealth: 1000
   gameManager: {fileID: 0}
   playerWeapons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  weaponHolder: {fileID: 4531629499367046}
+  allWeapons:
   - {fileID: 1869546907706654}
   - {fileID: 1658766184594698}
   - {fileID: 1407015218237058}
-  weaponHolder: {fileID: 4531629499367046}
-  allWeapons:
-  - {fileID: 1958901078853216, guid: 6b9946179d744994985265997a6461d5, type: 2}
-  - {fileID: 1804917286176194, guid: eb967ae4fc6a8494eb372a59daff6a0c, type: 2}
   currentWeapon: 0
 --- !u!114 &114684210163759618
 MonoBehaviour:
@@ -6640,7 +6641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 7
   range: 200
   fireRate: 10
   impactForce: 250
@@ -6678,15 +6679,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 4
   range: 200
   fireRate: 1.5
   impactForce: 20
-  magSize: 100
-  currentAmmoCount: 100
+  magSize: 16
+  currentAmmoCount: 16
   reloadTime: 2
   adsZoom: 30
-  adsAccuracy: 25
+  adsAccuracy: 20
   accuracy: 15
   recoil: 4
   bulletCount: 12

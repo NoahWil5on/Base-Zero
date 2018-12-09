@@ -25,9 +25,10 @@ public class weapon : MonoBehaviour
     private bool hasFired = false;
     private bool willReset1 = false;
     private bool willReset2 = false;
+    private bool hasReloaded = true;
 
     public string currentAmmoType = "AR";
-    public string scopeName = "defualt";
+    public string scopeName = "scope_defualt";
 
     public Camera fpsCam;
     public GameObject fpsController;
@@ -55,12 +56,12 @@ public class weapon : MonoBehaviour
 
     void Start()
     {
+        if(currentAmmoCount > magSize) currentAmmoCount = magSize;
         gameManager = GameObject.FindGameObjectWithTag("gm");
         GameObject[] scopeImages = GameObject.FindGameObjectsWithTag("scopeImage");
         for(int i = 0; i < scopeImages.Length; i++){
-            if(scopeImages[i].GetComponent<ScopeOverlay>() && scopeImages[i].GetComponent<ScopeOverlay>().scopeName == scopeName){
+            if(scopeImages[i].name == scopeName){
                 scopeImage = scopeImages[i];
-                print("found stuff");
             }
         }
 
@@ -128,8 +129,6 @@ public class weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.U)) myUpgrades[0] = !myUpgrades[0];
-
         fireTimer += Time.deltaTime;
         reloadTimer += Time.deltaTime;
 
@@ -139,15 +138,16 @@ public class weapon : MonoBehaviour
         }
         if (reloadTimer < reloadTime)
         {
+            hasReloaded = false;
             float myFOV = fpsCam.GetComponent<Camera>().fieldOfView;
             animator.SetBool("ads", false);
             fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV, 60, .2f);
             return;
         }
-        else
-        {
-            animator.SetBool("reloading", false);
+        else if(!Input.GetButton("Fire2")){
+            hasReloaded = true;
         }
+        animator.SetBool("reloading", false);
         if (Input.GetKey(KeyCode.R))
         {
             Reload();
@@ -166,7 +166,7 @@ public class weapon : MonoBehaviour
             willReset2 = true;
         }
         if(willReset1 && willReset2) hasFired = false;
-        ADS();
+        if(hasReloaded) ADS();
     }
     void ADS()
     {
@@ -248,7 +248,7 @@ public class weapon : MonoBehaviour
         if (ammoCount == 0) return;
 
         if(scopeImage){
-            scopeImage.SetActive(false);
+            scopeImage.GetComponent<Image>().enabled = false;
             weaponCamera.SetActive(true);
         }
 

@@ -23,6 +23,10 @@ public class PlayerHandler : MonoBehaviour {
     //QUEST STUFF
 
 	void Start () {
+        playerWeapons[0] = allWeapons[0];
+        playerWeapons[1] = allWeapons[1];
+        playerWeapons[2] = allWeapons[2];
+
         for(int i = 0; i < playerWeapons.Length; i++){
             if(!playerWeapons[i]) continue;
             playerWeapons[i].SetActive(false);
@@ -44,7 +48,6 @@ public class PlayerHandler : MonoBehaviour {
         }else if(Input.GetKeyDown("3")){
             SwitchWeapon(2);
         }
-        WeaponSwitch();
     }
     private void SwitchWeapon(int weaponNumber){
         if(currentWeapon == weaponNumber ||
@@ -84,24 +87,24 @@ public class PlayerHandler : MonoBehaviour {
             Destroy(other.gameObject);            
         }
     }
-    private void WeaponSwitch(){
-        if(Input.GetKeyDown(KeyCode.N)){
-            Destroy(playerWeapons[0]);
-            GameObject newWeapon = Instantiate(allWeapons[allWeaponCounter], Vector3.zero, Quaternion.identity, weaponHolder);
-            newWeapon.transform.rotation = weaponHolder.transform.rotation;
-            newWeapon.transform.position = weaponHolder.transform.position;
-            newWeapon.transform.localRotation = Quaternion.Euler(0,180,0);
-            newWeapon.transform.localPosition = new Vector3(0,0,.5f);
-            playerWeapons[0] = newWeapon;
+    // private void WeaponSwitch(){
+    //     if(Input.GetKeyDown(KeyCode.N)){
+    //         Destroy(playerWeapons[0]);
+    //         GameObject newWeapon = Instantiate(allWeapons[allWeaponCounter], Vector3.zero, Quaternion.identity, weaponHolder);
+    //         newWeapon.transform.rotation = weaponHolder.transform.rotation;
+    //         newWeapon.transform.position = weaponHolder.transform.position;
+    //         newWeapon.transform.localRotation = Quaternion.Euler(0,180,0);
+    //         newWeapon.transform.localPosition = new Vector3(0,0,.5f);
+    //         playerWeapons[0] = newWeapon;
 
-            for(int i = 0; i < playerWeapons.Length; i++){
-                if(!playerWeapons[i]) continue;
-                playerWeapons[i].SetActive(false);
-            }
-            playerWeapons[currentWeapon].SetActive(true);
+    //         for(int i = 0; i < playerWeapons.Length; i++){
+    //             if(!playerWeapons[i]) continue;
+    //             playerWeapons[i].SetActive(false);
+    //         }
+    //         playerWeapons[currentWeapon].SetActive(true);
 
-            allWeaponCounter++;
-            if(allWeaponCounter >= allWeapons.Count) allWeaponCounter = 0;
-        }
-    }
+    //         allWeaponCounter++;
+    //         if(allWeaponCounter >= allWeapons.Count) allWeaponCounter = 0;
+    //     }
+    // }
 }
