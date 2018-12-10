@@ -26,7 +26,7 @@ public class sceneSwitcher : MonoBehaviour {
             string sceneName = curScene.name;
 
 
-            if(sceneName == "KareemHunt")
+            if(sceneName == "HQTEST")
             {
                 if(this.gameObject.tag == "HQtoTrainyard")
                 {

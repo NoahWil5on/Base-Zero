@@ -20,7 +20,7 @@ public class QuestManager : MonoBehaviour {
 
         DontDestroyOnLoad(this.gameObject);
         arrowHandler = navArrow.GetComponent<arrowHandler>();
-        qp = GetComponent<QuestPopulator>();
+        qp = this.GetComponent<QuestPopulator>();
         //for(int i = 0; i < 3; i++)
         //{
 
@@ -39,7 +39,8 @@ public class QuestManager : MonoBehaviour {
         navArrow = GameObject.FindGameObjectWithTag("Arrow");
         if (questsWereAdded)
         {
-            generateQuests(qp.getQuestNames());
+            //generateQuests(qp.getQuestNames());
+            Debug.Log("Here");
             questsWereAdded = false;
         }
         if (Input.GetKeyDown(KeyCode.CapsLock))

@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenuMockup.unity
     guid: 55de2266f875a5245928a73b093b8434
-  - enabled: 1
-    path: Assets/Scenes/KareemHunt.unity
-    guid: 66c6022085a775247ae6a7d2e0f9d152
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -18,8 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Shoptest.unity
     guid: ecf26c73b2d13674d9ad1e2eee36659f
   - enabled: 1
-    path: Assets/Scenes/Trainyard-graybox.unity
-    guid: bb5eab070d2a3e54ebb5ea9e461d6157
+    path: Assets/Scenes/HQTEST.unity
+    guid: 57afe4e3da394e74e8cda65731f459f0
+  - enabled: 1
+    path: Assets/Scenes/ThisIsItChief.unity
+    guid: bff37bee4f2cce94f92f781278d4458d
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: b86f29e357d0b7640b232fa403da79d6
