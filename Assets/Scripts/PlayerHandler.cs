@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerHandler : MonoBehaviour {
@@ -48,6 +49,8 @@ public class PlayerHandler : MonoBehaviour {
         }else if(Input.GetKeyDown("3")){
             SwitchWeapon(2);
         }
+
+        if (currentPlayerHealth <= 0) onDeath();
     }
     private void SwitchWeapon(int weaponNumber){
         if(currentWeapon == weaponNumber ||
@@ -86,6 +89,10 @@ public class PlayerHandler : MonoBehaviour {
             gameManager.GetComponent<GameManager>().AddCash(other.GetComponent<PickupHandler>().smallCashAmount);
             Destroy(other.gameObject);            
         }
+    }
+    private void onDeath()
+    {
+        SceneManager.LoadScene(3);
     }
     // private void WeaponSwitch(){
     //     if(Input.GetKeyDown(KeyCode.N)){

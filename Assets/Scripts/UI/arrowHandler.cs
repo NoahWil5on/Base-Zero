@@ -25,7 +25,7 @@ public class arrowHandler : MonoBehaviour
 
     void Update()
     {
-        return;
+        
         //if (flag)
         //{
             onObjectiveChange();

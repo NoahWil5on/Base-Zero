@@ -45,8 +45,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 10.9, y: 2.96, z: 9.67}
+  m_LocalRotation: {x: -0, y: 0.65364236, z: -0, w: 0.75680363}
+  m_LocalPosition: {x: 149.9, y: 2.1, z: 188.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -1567,7 +1567,7 @@ GameObject:
   - component: {fileID: 114928418575926200}
   m_Layer: 2
   m_Name: NavArrow
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
