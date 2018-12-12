@@ -45,9 +45,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: -0, y: 0.65364236, z: -0, w: 0.75680363}
-  m_LocalPosition: {x: 149.9, y: 2.1, z: 188.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.88487434, z: -0, w: 0.46582973}
+  m_LocalPosition: {x: 126.72, y: 2.26, z: 201.29}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -90,7 +90,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 1000
+  far clip plane: 500
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -142,13 +142,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.019
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 207
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -186,7 +186,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.503
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -238,8 +238,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsWalking: 0
-  m_WalkSpeed: 5
-  m_RunSpeed: 10
+  m_WalkSpeed: 7
+  m_RunSpeed: 14
   m_RunstepLenghten: 0.7
   m_JumpSpeed: 10
   m_StickToGroundForce: 10
@@ -288,8 +288,8 @@ MonoBehaviour:
       m_RotationOrder: 4
   m_UseHeadBob: 1
   m_HeadBob:
-    HorizontalBobRange: 0.1
-    VerticalBobRange: 0.1
+    HorizontalBobRange: 0.05
+    VerticalBobRange: 0.05
     Bobcurve:
       serializedVersion: 2
       m_Curve:
@@ -303,7 +303,7 @@ MonoBehaviour:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.5
+        time: 1
         value: 1
         inSlope: 0
         outSlope: 0
@@ -312,7 +312,7 @@ MonoBehaviour:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1
+        time: 2
         value: 0
         inSlope: 0
         outSlope: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.5
+        time: 3
         value: -1
         inSlope: 0
         outSlope: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 2
+        time: 4
         value: 0
         inSlope: 0
         outSlope: 0
@@ -2194,7 +2194,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1758399884802124}
   m_LocalRotation: {x: 0.69979, y: 0.00000044703478, z: -0.10291673, w: 0.7068961}
-  m_LocalPosition: {x: 0.9369971, y: 0.3088, z: 1.2584012}
+  m_LocalPosition: {x: 0.092, y: 0.657, z: 1.383}
   m_LocalScale: {x: 0.06100609, y: 0.061006118, z: 0.06100613}
   m_Children:
   - {fileID: 4572219862467104}
@@ -6354,7 +6354,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 59b80eabacb364b4c91b48b0ef908ad9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.111
   m_Pitch: 0.5
   Loop: 0
   Mute: 0
@@ -6449,13 +6449,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cd7f2acd8974c6645a7d9df7d3c4767a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 44
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -6493,7 +6493,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6717,7 +6717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ff851de39bb494aa5e7c1d9633a27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 100002}
+  controller: {fileID: 100000}
 --- !u!135 &135447960889681396
 SphereCollider:
   m_ObjectHideFlags: 1

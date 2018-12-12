@@ -7,7 +7,7 @@ using UnityEngine;
 public class arrowHandler : MonoBehaviour
 {
 
-    private GameObject goTarget;
+    public GameObject goTarget;
     public GameObject controller;
 
     private GameObject mngrRef;
@@ -32,7 +32,7 @@ public class arrowHandler : MonoBehaviour
         //    flag = false;
         //}
 
-        goTarget = GameObject.FindGameObjectWithTag("Heli2");
+        //goTarget = GameObject.FindGameObjectWithTag("Heli2");
         Vector3 tmpVec = controller.transform.InverseTransformPoint(goTarget.transform.position);
 
         float angtoTar = Mathf.Atan2(tmpVec.x, tmpVec.z) * Mathf.Rad2Deg;
@@ -44,7 +44,7 @@ public class arrowHandler : MonoBehaviour
         Scene curScene = SceneManager.GetActiveScene();
         string sceneName = curScene.name;
 
-        if (sceneName == "HQTEST")
+        if (sceneName == "HQ")
         {
             if (qm.sendCurQuestLocation() == "HQ")
             {
@@ -92,7 +92,7 @@ public class arrowHandler : MonoBehaviour
             }
 
         }
-        else if(sceneName == "ThisIsItChief")
+        else if(sceneName == "Trainyard")
         {
             if (qm.sendCurQuestLocation() == "Trainyard")
             {
