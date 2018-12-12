@@ -12,7 +12,7 @@ public class QuestManager : MonoBehaviour {
     private QuestPopulator qp;
     private bool questsWereAdded = true;
 
-    private int questIndex = 0;
+    public int questIndex = 0;
 
     public GameObject navArrow;
     private arrowHandler arrowHandler;
@@ -76,9 +76,9 @@ public class QuestManager : MonoBehaviour {
             questIndex++;
             arrowHandler.onObjectiveChange();
         }
-        if(questIndex >= 5)
+        if(questIndex >= 6)
         {
-            
+            SceneManager.LoadScene(4);
         }
 
 
@@ -129,6 +129,7 @@ public class QuestManager : MonoBehaviour {
     }
     private void generateQuests(string[] questPopulatedArr)
     {
+        currentQuests[5] = questDatabase[14];
         for(int i = 0; i < questPopulatedArr.Length; i++)
         {
             string cur = questPopulatedArr[i];
