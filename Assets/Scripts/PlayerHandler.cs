@@ -20,10 +20,24 @@ public class PlayerHandler : MonoBehaviour {
     // Use this for initialization
 
 
+    public static PlayerHandler instance;
 
-    //QUEST STUFF
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
 
 	void Start () {
+
         playerWeapons[0] = allWeapons[3];
         playerWeapons[1] = allWeapons[1];
         playerWeapons[2] = allWeapons[6];

@@ -30,6 +30,9 @@ TagManager:
   - Nuke5
   - Heli1
   - Escape
+  - pistol
+  - shopmanager
+  - questobj
   layers:
   - Default
   - TransparentFX

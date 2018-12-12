@@ -19,9 +19,17 @@ public class ShopSystemHandler : MonoBehaviour {
     public ShopManager shopRef;
     public int[] equippedWeapons = new int[3];
     public ShopWeapon[] weaponsList = new ShopWeapon[7];
+    private GameObject player;
+    public GameObject canvas;
+    public GameObject questObj;
+
+
     // Use this for initialization
-    void awake () {        
-		if(SceneManager.GetActiveScene().name == "shoptest")
+    void Awake () {        
+        player = GameObject.FindGameObjectWithTag("Player");
+        canvas = GameObject.FindGameObjectWithTag("Canvas");
+        questObj = GameObject.FindGameObjectWithTag("questobj");
+		if(SceneManager.GetActiveScene().name == "Shoptest")
         {
             shopRef = GameObject.FindGameObjectWithTag("shopmanager").GetComponent<ShopManager>();
             
@@ -31,7 +39,26 @@ public class ShopSystemHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        //print(SceneManager.GetActiveScene().name);
+		if(SceneManager.GetActiveScene().name == "Shoptest")
+        {
+            if(!Cursor.visible){
+                Cursor.visible = true;
+            }
+            shopRef = GameObject.FindGameObjectWithTag("shopmanager").GetComponent<ShopManager>();
+            Cursor.lockState = CursorLockMode.None;
+            gameObject.GetComponent<QuestManager>().enabled = false;
+            questObj.SetActive(false);
+            canvas.SetActive(false);
+            player.SetActive(false);
+        }else{
+            if(Cursor.visible){
+                Cursor.visible = false;
+            }
+            questObj.SetActive(true);
+            player.SetActive(true);
+            canvas.SetActive(true);
+        }
 	}
 
     public void updateShop()
@@ -89,9 +116,12 @@ public class ShopSystemHandler : MonoBehaviour {
             weaponsList[i].stockUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockUpgraded;
             weaponsList[i].barrelUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelUpgraded;
         }
+        for(int j = 0; j < 3; j++){
+            if(shopRef.equippedWeapons[j] != null){
+                 equippedWeapons[j] = shopRef.equippedWeapons[j].GetComponent<WeaponInfo>().wepIndex;
+            }
+           
+        }
 
-        equippedWeapons[0] = shopRef.equippedWeapons[0].GetComponent<WeaponInfo>().wepIndex;
-        equippedWeapons[1] = shopRef.equippedWeapons[1].GetComponent<WeaponInfo>().wepIndex;
-        equippedWeapons[2] = shopRef.equippedWeapons[2].GetComponent<WeaponInfo>().wepIndex;
     }
 }
