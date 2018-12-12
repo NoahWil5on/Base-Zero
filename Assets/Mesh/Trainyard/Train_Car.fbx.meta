@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: ad8af547d2407e448972d8516a9ae086
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Train_Car_Bar_1
+    100004: Train_Car_Bar_2
+    100006: Train_Car_Blocker1
+    100008: Train_Car_Blocker2
+    100010: Train_Car_Blocker3
+    100012: Train_Car_Blocker4
+    100014: Train_Car_Closed_Brown
+    100016: Train_Car_Closed_Door_1_Brown
+    100018: Train_Car_Closed_Door_1_Green
+    100020: Train_Car_Closed_Door_1_White
+    100022: Train_Car_Closed_Door_2_Brown
+    100024: Train_Car_Closed_Door_2_Green
+    100026: Train_Car_Closed_Door_2_White
+    100028: Train_Car_Closed_Green
+    100030: Train_Car_Closed_White
+    100032: Train_Car_Fuel
+    100034: Train_Car_Wheel_1
+    100036: Train_Car_Wheel_1 1
+    100038: Train_Car_Wheel_1 2
+    100040: Train_Car_Wheel_1 3
+    100042: Train_Car_Wheel_2
+    100044: Train_Car_Wheel_2 1
+    100046: Train_Car_Wheel_2 2
+    100048: Train_Car_Wheel_2 3
+    100050: Train_Car_Wheel_Bar_1
+    100052: Train_Car_Wheel_Bar_1 1
+    100054: Train_Car_Wheel_Bar_2
+    100056: Train_Car_Wheel_Bar_2 1
+    100058: Train_Car_Wheel_Cover_1
+    100060: Train_Car_Wheel_Cover_2
+    400000: //RootNode
+    400002: Train_Car_Bar_1
+    400004: Train_Car_Bar_2
+    400006: Train_Car_Blocker1
+    400008: Train_Car_Blocker2
+    400010: Train_Car_Blocker3
+    400012: Train_Car_Blocker4
+    400014: Train_Car_Closed_Brown
+    400016: Train_Car_Closed_Door_1_Brown
+    400018: Train_Car_Closed_Door_1_Green
+    400020: Train_Car_Closed_Door_1_White
+    400022: Train_Car_Closed_Door_2_Brown
+    400024: Train_Car_Closed_Door_2_Green
+    400026: Train_Car_Closed_Door_2_White
+    400028: Train_Car_Closed_Green
+    400030: Train_Car_Closed_White
+    400032: Train_Car_Fuel
+    400034: Train_Car_Wheel_1
+    400036: Train_Car_Wheel_1 1
+    400038: Train_Car_Wheel_1 2
+    400040: Train_Car_Wheel_1 3
+    400042: Train_Car_Wheel_2
+    400044: Train_Car_Wheel_2 1
+    400046: Train_Car_Wheel_2 2
+    400048: Train_Car_Wheel_2 3
+    400050: Train_Car_Wheel_Bar_1
+    400052: Train_Car_Wheel_Bar_1 1
+    400054: Train_Car_Wheel_Bar_2
+    400056: Train_Car_Wheel_Bar_2 1
+    400058: Train_Car_Wheel_Cover_1
+    400060: Train_Car_Wheel_Cover_2
+    2100000: Train_Car_mat
+    2100002: Train_Car_Fuel_mat
+    2100004: Train_Car_Closed_Green_mat
+    2100006: Train_Car_Closed_White_mat
+    2100008: Train_Car_Closed_Brown_mat
+    2300000: //RootNode
+    2300002: Train_Car_Bar_1
+    2300004: Train_Car_Bar_2
+    2300006: Train_Car_Blocker1
+    2300008: Train_Car_Blocker2
+    2300010: Train_Car_Blocker3
+    2300012: Train_Car_Blocker4
+    2300014: Train_Car_Closed_Brown
+    2300016: Train_Car_Closed_Door_1_Brown
+    2300018: Train_Car_Closed_Door_1_Green
+    2300020: Train_Car_Closed_Door_1_White
+    2300022: Train_Car_Closed_Door_2_Brown
+    2300024: Train_Car_Closed_Door_2_Green
+    2300026: Train_Car_Closed_Door_2_White
+    2300028: Train_Car_Closed_Green
+    2300030: Train_Car_Closed_White
+    2300032: Train_Car_Fuel
+    2300034: Train_Car_Wheel_1
+    2300036: Train_Car_Wheel_1 1
+    2300038: Train_Car_Wheel_1 2
+    2300040: Train_Car_Wheel_1 3
+    2300042: Train_Car_Wheel_2
+    2300044: Train_Car_Wheel_2 1
+    2300046: Train_Car_Wheel_2 2
+    2300048: Train_Car_Wheel_2 3
+    2300050: Train_Car_Wheel_Bar_1
+    2300052: Train_Car_Wheel_Bar_1 1
+    2300054: Train_Car_Wheel_Bar_2
+    2300056: Train_Car_Wheel_Bar_2 1
+    2300058: Train_Car_Wheel_Cover_1
+    2300060: Train_Car_Wheel_Cover_2
+    3300000: //RootNode
+    3300002: Train_Car_Bar_1
+    3300004: Train_Car_Bar_2
+    3300006: Train_Car_Blocker1
+    3300008: Train_Car_Blocker2
+    3300010: Train_Car_Blocker3
+    3300012: Train_Car_Blocker4
+    3300014: Train_Car_Closed_Brown
+    3300016: Train_Car_Closed_Door_1_Brown
+    3300018: Train_Car_Closed_Door_1_Green
+    3300020: Train_Car_Closed_Door_1_White
+    3300022: Train_Car_Closed_Door_2_Brown
+    3300024: Train_Car_Closed_Door_2_Green
+    3300026: Train_Car_Closed_Door_2_White
+    3300028: Train_Car_Closed_Green
+    3300030: Train_Car_Closed_White
+    3300032: Train_Car_Fuel
+    3300034: Train_Car_Wheel_1
+    3300036: Train_Car_Wheel_1 1
+    3300038: Train_Car_Wheel_1 2
+    3300040: Train_Car_Wheel_1 3
+    3300042: Train_Car_Wheel_2
+    3300044: Train_Car_Wheel_2 1
+    3300046: Train_Car_Wheel_2 2
+    3300048: Train_Car_Wheel_2 3
+    3300050: Train_Car_Wheel_Bar_1
+    3300052: Train_Car_Wheel_Bar_1 1
+    3300054: Train_Car_Wheel_Bar_2
+    3300056: Train_Car_Wheel_Bar_2 1
+    3300058: Train_Car_Wheel_Cover_1
+    3300060: Train_Car_Wheel_Cover_2
+    4300000: Train_Car
+    4300002: Train_Car_Blocker1
+    4300004: Train_Car_Blocker2
+    4300006: Train_Car_Blocker3
+    4300008: Train_Car_Blocker4
+    4300010: Train_Car_Wheel_Cover_1
+    4300012: Train_Car_Wheel_Bar_1
+    4300014: Train_Car_Wheel_1
+    4300016: Train_Car_Wheel_2
+    4300018: Train_Car_Wheel_Bar_2
+    4300020: Train_Car_Wheel_1
+    4300022: Train_Car_Wheel_2
+    4300024: Train_Car_Wheel_Cover_2
+    4300026: Train_Car_Wheel_Bar_1
+    4300028: Train_Car_Wheel_1
+    4300030: Train_Car_Wheel_2
+    4300032: Train_Car_Wheel_Bar_2
+    4300034: Train_Car_Wheel_1
+    4300036: Train_Car_Wheel_2
+    4300038: Train_Car_Bar_1
+    4300040: Train_Car_Bar_2
+    4300042: Train_Car_Fuel
+    4300044: Train_Car_Closed_Green
+    4300046: Train_Car_Closed_Door_1_Green
+    4300048: Train_Car_Closed_Door_2_Green
+    4300050: Train_Car_Closed_White
+    4300052: Train_Car_Closed_Door_1_White
+    4300054: Train_Car_Closed_Door_2_White
+    4300056: Train_Car_Closed_Brown
+    4300058: Train_Car_Closed_Door_1_Brown
+    4300060: Train_Car_Closed_Door_2_Brown
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
