@@ -19,6 +19,8 @@ public class WeaponInfo : MonoBehaviour {
     public GameObject barrelButton;
     public GameObject magazineButton;
     public GameObject WeaponComponents;
+    public GameObject WeaponAttachments;
+    public GameObject purchaseButton;
     public bool stockUpgraded = false;
     public bool scopeUpgraded = false;
     public bool barrelUpgraded = false;
@@ -37,7 +39,7 @@ public class WeaponInfo : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+	
 	}
 
     public void hideAttachment(GameObject attachmentToHide)
@@ -47,6 +49,12 @@ public class WeaponInfo : MonoBehaviour {
     public void unhideAttachment(GameObject attachmentToUnHide)
     {
         attachmentToUnHide.SetActive(true);
+    }
+
+    public void loadPurchase()
+    {
+        purchased = true;
+        Destroy(purchaseButton);
     }
 
     
