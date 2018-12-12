@@ -5,8 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     private Dictionary<string, int> weaponAmmo = new Dictionary<string, int>();
-    private int playerCash = 0;
-    private int playerScraps = 0;
+    public int playerCash = 0;
+    public int playerScraps = 0;
     public int startingAmmo = 500;
     void Start(){
         weaponAmmo.Add("LMG", startingAmmo);
