@@ -32,7 +32,7 @@ public class arrowHandler : MonoBehaviour
         //    flag = false;
         //}
 
-       
+        goTarget = GameObject.FindGameObjectWithTag("Heli2");
         Vector3 tmpVec = controller.transform.InverseTransformPoint(goTarget.transform.position);
 
         float angtoTar = Mathf.Atan2(tmpVec.x, tmpVec.z) * Mathf.Rad2Deg;
