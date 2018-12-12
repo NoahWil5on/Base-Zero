@@ -39,12 +39,13 @@ public class UIHandler : MonoBehaviour {
         {
             resourceMenuBackground.SetActive(false);
         }
+        PlayerHandler playerHandler = player.GetComponent<PlayerHandler>();
         playerAmmo = gameManager.GetComponent<GameManager>().CheckAmmo("AR");
-        playerHealth = player.GetComponent<PlayerHandler>().GetHealth();
+        playerHealth = playerHandler.GetHealth();
         playerScraps = gameManager.GetComponent<GameManager>().GetPlayerScraps();
         playerCash = gameManager.GetComponent<GameManager>().GetPlayerCash();
 
-        ammoUIText.text = (playerAmmo).ToString();
+        ammoUIText.text = playerHandler.playerWeapons[playerHandler.currentWeapon].GetComponent<weapon>().currentAmmoCount.ToString() + "/" + (playerAmmo).ToString();
         healthUIText.text = (playerHealth / 10).ToString();
         scrapsText.text = (playerScraps).ToString();
         cashText.text = (playerCash).ToString();

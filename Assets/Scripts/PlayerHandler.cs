@@ -24,9 +24,9 @@ public class PlayerHandler : MonoBehaviour {
     //QUEST STUFF
 
 	void Start () {
-        playerWeapons[0] = allWeapons[0];
+        playerWeapons[0] = allWeapons[3];
         playerWeapons[1] = allWeapons[1];
-        playerWeapons[2] = allWeapons[2];
+        playerWeapons[2] = allWeapons[6];
 
         for(int i = 0; i < playerWeapons.Length; i++){
             if(!playerWeapons[i]) continue;

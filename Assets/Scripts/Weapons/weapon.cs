@@ -21,6 +21,7 @@ public class weapon : MonoBehaviour
     public float recoil = 1.5f;
     public int bulletCount = 1;
     public bool semiAuto = false;
+    public string fireAnimation = "firing";
 
     private float currentAccuracy = 1.0f;
     private bool hasFired = false;
@@ -50,13 +51,30 @@ public class weapon : MonoBehaviour
 
     private Vector3 localPos = new Vector3();
     private Quaternion localRot = new Quaternion();
+    private GameObject[] crossHairs;
 
     private int myIterations = 0;
 
     private bool[] myUpgrades = {false, false, false, false};
 
+    //TODO:
+    /*
+    * Add in different sensativity when ADS
+    * Add in modularity of ADS accuracy on different components
+    * Different gun sounds based on modularity
+    * Different Impact force based on modularity
+    * Different bulletHole image based on modularity
+    * Varying muzzle flash animations
+    * Improved animations
+    * Weapon Sway
+    * No running while ADS or shooting
+    */
     void Start()
     {
+        FindStats(this.gameObject);
+
+        crossHairs = GameObject.FindGameObjectsWithTag("crossHair");
+
         if(currentAmmoCount > magSize) currentAmmoCount = magSize;
         gameManager = GameObject.FindGameObjectWithTag("gm");
 /*
@@ -75,8 +93,6 @@ public class weapon : MonoBehaviour
                 scopeImage = scopeImages[i];
             }
         }
-
-        FindStats(this.gameObject);
         currentAccuracy = accuracy;
     }
     void FindStats(GameObject objToSearch){
@@ -89,6 +105,8 @@ public class weapon : MonoBehaviour
             if(children[i].GetComponent<stock>() != null){
                 if(children[i].GetComponent<stock>().upgrade && myUpgrades[0]){
                     print("upgraded");
+                    accuracy += children[i].GetComponent<stock>().accuracy;
+                    recoil *= children[i].GetComponent<stock>().recoil;
                 }else if(children[i].GetComponent<stock>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
@@ -99,37 +117,42 @@ public class weapon : MonoBehaviour
                     children[i].gameObject.SetActive(false);
                 }
             }else if(children[i].GetComponent<magazine>() != null){
-                if(children[i].GetComponent<magazine>().upgrade && myUpgrades[0]){
+                if(children[i].GetComponent<magazine>().upgrade && myUpgrades[1]){
                     print("upgraded");
+                    magSize += children[i].GetComponent<magazine>().magSize;
+                    reloadTime *= children[i].GetComponent<magazine>().reloadTime;
                 }else if(children[i].GetComponent<magazine>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
 
-                if(!children[i].GetComponent<magazine>().upgrade && !myUpgrades[0]){
+                if(!children[i].GetComponent<magazine>().upgrade && !myUpgrades[1]){
                     print("unUpgraded");
                 }else if(!children[i].GetComponent<magazine>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
             }else if(children[i].GetComponent<scope>() != null){
-                if(children[i].GetComponent<scope>().upgrade && myUpgrades[0]){
+                if(children[i].GetComponent<scope>().upgrade && myUpgrades[2]){
                     print("upgraded");
+                    scopeName = children[i].GetComponent<scope>().scopeImage;
+                    adsZoom = children[i].GetComponent<scope>().fov;
                 }else if(children[i].GetComponent<scope>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
 
-                if(!children[i].GetComponent<scope>().upgrade && !myUpgrades[0]){
+                if(!children[i].GetComponent<scope>().upgrade && !myUpgrades[2]){
                     print("unUpgraded");
                 }else if(!children[i].GetComponent<scope>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
             }else if(children[i].GetComponent<barrel>() != null){
-                if(children[i].GetComponent<barrel>().upgrade && myUpgrades[0]){
+                if(children[i].GetComponent<barrel>().upgrade && myUpgrades[3]){
                     print("upgraded");
+                    accuracy += children[i].GetComponent<barrel>().accuracy;
                 }else if(children[i].GetComponent<barrel>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
 
-                if(!children[i].GetComponent<barrel>().upgrade && !myUpgrades[0]){
+                if(!children[i].GetComponent<barrel>().upgrade && !myUpgrades[3]){
                     print("unUpgraded");
                 }else if(!children[i].GetComponent<barrel>().upgrade){
                     children[i].gameObject.SetActive(false);
@@ -145,7 +168,7 @@ public class weapon : MonoBehaviour
 
         if (fireTimer >= 1 / (fireRate * 2))
         {
-            secondMotionAnimator.SetBool("firing", false);
+            secondMotionAnimator.SetBool(fireAnimation, false);
         }
         if (reloadTimer < reloadTime)
         {
@@ -186,6 +209,9 @@ public class weapon : MonoBehaviour
         {
             currentAccuracy = adsAccuracy;
             if(scopeImage){
+                for(int i = 0; i < crossHairs.Length; i++){
+                    crossHairs[i].GetComponent<Image>().enabled = false;
+                }
                 scopeImage.GetComponent<Image>().enabled = true;
                 weaponCamera.SetActive(false);
             }
@@ -195,7 +221,10 @@ public class weapon : MonoBehaviour
         else
         {
             currentAccuracy = accuracy;
-            if(scopeImage){
+            if(scopeImage){                
+                for(int i = 0; i < crossHairs.Length; i++){
+                    crossHairs[i].GetComponent<Image>().enabled = true;
+                }
                 scopeImage.GetComponent<Image>().enabled = false;
                 weaponCamera.SetActive(true);
             }
@@ -209,7 +238,7 @@ public class weapon : MonoBehaviour
         hasFired = true;
         willReset1 = false;
         willReset2 = false;
-        secondMotionAnimator.SetBool("firing", true);
+        secondMotionAnimator.SetBool(fireAnimation, true);
 
         muzzleFlash.Play();
         fpsController.GetComponent<FirstPersonController>().m_MouseLook.m_CameraTargetRot *= Quaternion.Euler (-recoil, 0f, 0f);
