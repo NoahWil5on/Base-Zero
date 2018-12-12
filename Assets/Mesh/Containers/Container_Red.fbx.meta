@@ -69,7 +69,12 @@ ModelImporter:
     4300020: Container_Door_Red_4
     4300022: Container_Pole_1
     4300024: Container_Pole_2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cargo_Container_mat
+    second: {fileID: 2100000, guid: 02eb242115dccb148a5c79482ac10a43, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: bc03fcfb0d54c424db0ea19588983b2a
+guid: 1b9e58b611c2c5149b7d3cdef49c34ae
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Garage_mat
+    2100000: Objective_Asset_Three_mat
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Garage
+    4300000: Jerry_Can_Red
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -40,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 50
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1

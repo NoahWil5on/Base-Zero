@@ -1,14 +1,19 @@
 fileFormatVersion: 2
-guid: bc03fcfb0d54c424db0ea19588983b2a
+guid: f6d6255cb0adab04795fa0195fd0c0fb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Clipboard_Clip
     400000: //RootNode
-    2100000: Garage_mat
+    400002: Clipboard_Clip
+    2100000: Objective_Assets_One_mat
     2300000: //RootNode
+    2300002: Clipboard_Clip
     3300000: //RootNode
-    4300000: Garage
+    3300002: Clipboard_Clip
+    4300000: Clipboard_Wood
+    4300002: Clipboard_Clip
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -40,7 +45,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 50
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
