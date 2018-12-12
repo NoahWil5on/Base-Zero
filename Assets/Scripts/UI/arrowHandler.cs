@@ -80,6 +80,10 @@ public class arrowHandler : MonoBehaviour
                         goTarget = GameObject.FindGameObjectWithTag("Misc5");
                         break;
 
+                    case "Escape":
+                        goTarget = GameObject.FindGameObjectWithTag("Escape");
+                        break;
+
                     default:
                         break;
 

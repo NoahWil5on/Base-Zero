@@ -20,9 +20,24 @@ public class buttonMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+        Cursor.visible = true;
+        Scene curScene = SceneManager.GetActiveScene();
+        string sceneName = curScene.name;
+
+        if(sceneName == "GameOver")
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SceneManager.LoadScene(0);
+            }
+        }
+
     }
-    public void switchScene()
+    public void goToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void goToGameScene()
     {
         SceneManager.LoadScene(1);
     }
