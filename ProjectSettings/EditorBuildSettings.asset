@@ -14,12 +14,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Shoptest.unity
     guid: ecf26c73b2d13674d9ad1e2eee36659f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HQTEST.unity
     guid: 57afe4e3da394e74e8cda65731f459f0
   - enabled: 1
-    path: Assets/Scenes/ThisIsItChief.unity
-    guid: bff37bee4f2cce94f92f781278d4458d
+    path: Assets/Scenes/HQ.unity
+    guid: 91a73ff9051c40747aa7ae0140ae1f4a
+  - enabled: 1
+    path: Assets/Scenes/Trainyard.unity
+    guid: 1687921844fdf584f924baeba2e4540f
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: b86f29e357d0b7640b232fa403da79d6

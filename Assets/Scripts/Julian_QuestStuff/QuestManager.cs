@@ -15,8 +15,24 @@ public class QuestManager : MonoBehaviour {
 
     public GameObject navArrow;
     private arrowHandler arrowHandler;
-	// Use this for initialization
-	void Start () {
+
+    public static QuestManager instance;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
+    // Use this for initialization
+    void Start () {
 
         DontDestroyOnLoad(this.gameObject);
         arrowHandler = navArrow.GetComponent<arrowHandler>();
@@ -39,7 +55,7 @@ public class QuestManager : MonoBehaviour {
         navArrow = GameObject.FindGameObjectWithTag("Arrow");
         if (questsWereAdded)
         {
-            //generateQuests(qp.getQuestNames());
+            generateQuests(qp.getQuestNames());
             Debug.Log("Here");
             questsWereAdded = false;
         }

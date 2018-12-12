@@ -26,23 +26,23 @@ public class sceneSwitcher : MonoBehaviour {
             string sceneName = curScene.name;
 
 
-            if(sceneName == "HQTEST")
+            if(sceneName == "HQ")
             {
                 if(this.gameObject.tag == "HQtoTrainyard")
                 {
                     SceneManager.LoadScene(2);
+                   // arrowScr.onObjectiveChange();
                     SceneManager.MoveGameObjectToScene(GameObject.FindGameObjectWithTag("Player"), SceneManager.GetSceneByBuildIndex(2));
-                    arrowScr.onObjectiveChange();
 
                 }
             }
-            else if(sceneName == "ThisIsItChief")
+            else if(sceneName == "Trainyard")
             {
                 if (this.gameObject.tag == "TrainyardtoHQ")
                 {
                     SceneManager.LoadScene(1);
+                    //arrowScr.onObjectiveChange();
                     SceneManager.MoveGameObjectToScene(GameObject.FindGameObjectWithTag("Player"), SceneManager.GetSceneByBuildIndex(1));
-                    arrowScr.onObjectiveChange();
                 }
             }
         }

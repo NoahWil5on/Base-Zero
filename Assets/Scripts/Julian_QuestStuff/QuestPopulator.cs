@@ -37,6 +37,12 @@ public class QuestPopulator : MonoBehaviour {
         heli[4] = new QuestProp("bunker", "heli", "heli5");
         //fill nuke
 
+        nuke[0] = new QuestProp("hq", "nuke", "nuke1");
+        nuke[1] = new QuestProp("train", "nuke", "nuke2");
+        nuke[2] = new QuestProp("hq", "nuke", "nuke3");
+        nuke[3] = new QuestProp("train", "nuke", "nuke4");
+        nuke[4] = new QuestProp("train", "nuke", "nuke5");
+
         //fill misc
         misc[0] = new QuestProp("train", "misc", "misc1");
         misc[1] = new QuestProp("train", "misc", "misc2");
@@ -46,7 +52,16 @@ public class QuestPopulator : MonoBehaviour {
         //{
         //    
         //}
-        Populate(heli);
+        int xx = Random.Range(0, 2);
+        if(xx == 0)
+        {
+            Populate(heli);
+
+        }
+        else
+        {
+            Populate(nuke);
+        }
         for(int i = 0; i < 5; i++)
         {
             
