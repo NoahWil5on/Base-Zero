@@ -29,6 +29,7 @@ public class WeaponInfo : MonoBehaviour {
     public int weaponCost = 1200;
     public bool purchased = false;
     public string name;
+    public int wepIndex;
     // Use this for initialization
     void Start () {
         stockUpgrade.SetActive(false);

@@ -44,6 +44,7 @@ public class ShopManager : MonoBehaviour {
         for(int i = 0; i < weaponRefArray.Length; i++)
         {
             weaponRefArray[i].SetActive(false);
+
         }
     }
 
@@ -63,7 +64,7 @@ public class ShopManager : MonoBehaviour {
 
     public void CheckWeaponSlots()
     {
-        if(currentWeapon == null || currentWeapon.GetComponent<WeaponInfo>().purchased == false)
+        if (currentWeapon == null || currentWeapon.GetComponent<WeaponInfo>().purchased == false)
         {
             ToggleEquips();
         } else
