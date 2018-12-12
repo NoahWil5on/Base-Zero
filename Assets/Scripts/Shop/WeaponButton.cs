@@ -64,7 +64,7 @@ public class WeaponButton : MonoBehaviour {
                 }
                 break;
             case 2:
-                if (shopManager.GetComponent<ShopManager>().scrap >= weaponRef.scopeCost)
+                if (weaponRef.scopeUpgrade != null && shopManager.GetComponent<ShopManager>().scrap >= weaponRef.scopeCost)
                 {
                     shopManager.GetComponent<ShopManager>().scrap -= weaponRef.scopeCost;
                     weaponRef.scopeUpgraded = true;

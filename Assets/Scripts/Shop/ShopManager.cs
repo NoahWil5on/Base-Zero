@@ -43,6 +43,7 @@ public class ShopManager : MonoBehaviour {
     {
         for(int i = 0; i < weaponRefArray.Length; i++)
         {
+            weaponRefArray[i].GetComponent<WeaponInfo>().WeaponComponents.SetActive(false);
             weaponRefArray[i].SetActive(false);
 
         }
@@ -88,7 +89,8 @@ public class ShopManager : MonoBehaviour {
             }
         } else
         {
-            if (equippedWeapons[1] == null && equippedWeapons[2] == null || currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[1].GetComponent<WeaponInfo>().name && currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[2].GetComponent<WeaponInfo>().name)
+            //currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[1].GetComponent<WeaponInfo>().name && currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[2].GetComponent<WeaponInfo>().name
+            if ((equippedWeapons[1] == null && equippedWeapons[2] == null) || (equippedWeapons[1] == null && currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[2].GetComponent<WeaponInfo>().name) || (equippedWeapons[2] == null && currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[1].GetComponent<WeaponInfo>().name) || currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[1].GetComponent<WeaponInfo>().name && currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[2].GetComponent<WeaponInfo>().name)
             {
                 equipSlots[1].SetActive(true);
                 equipSlots[2].SetActive(true);
