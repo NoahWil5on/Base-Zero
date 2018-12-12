@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour {
@@ -74,6 +75,10 @@ public class QuestManager : MonoBehaviour {
             currentQuests[questIndex].SetActive(false);
             questIndex++;
             arrowHandler.onObjectiveChange();
+        }
+        if(questIndex >= 5)
+        {
+            
         }
 
 
