@@ -59,7 +59,10 @@ public class WeaponButton : MonoBehaviour {
                     shopManager.GetComponent<ShopManager>().scrap -= weaponRef.stockCost;
                     weaponRef.stockUpgraded = true;
                     weaponRef.stockUpgrade.SetActive(true);
-                    weaponRef.stock.SetActive(false);
+                    if (weaponRef.stock != null)
+                    {
+                        weaponRef.stock.SetActive(false);
+                    }
                     purchaseComplete = true;
                 }
                 break;
@@ -82,7 +85,10 @@ public class WeaponButton : MonoBehaviour {
                     shopManager.GetComponent<ShopManager>().scrap -= weaponRef.barrelCost;
                     weaponRef.barrelUpgraded = true;
                     weaponRef.barrelUpgrade.SetActive(true);
-                    weaponRef.barrel.SetActive(false);
+                    if (weaponRef.barrel != null)
+                    {
+                        weaponRef.barrel.SetActive(false);
+                    }
                     purchaseComplete = true;
                 }
                 break;
@@ -92,7 +98,10 @@ public class WeaponButton : MonoBehaviour {
                     shopManager.GetComponent<ShopManager>().scrap -= weaponRef.magazineCost;
                     weaponRef.magazineUpgraded = true;
                     weaponRef.magazineUpgrade.SetActive(true);
-                    weaponRef.magazine.SetActive(false);
+                    if (weaponRef.magazine != null)
+                    {
+                        weaponRef.magazine.SetActive(false);
+                    }
                     purchaseComplete = true;
                 }
                 break;

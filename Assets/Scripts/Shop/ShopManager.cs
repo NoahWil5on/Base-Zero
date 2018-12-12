@@ -43,7 +43,11 @@ public class ShopManager : MonoBehaviour {
     {
         for(int i = 0; i < weaponRefArray.Length; i++)
         {
-            weaponRefArray[i].GetComponent<WeaponInfo>().WeaponComponents.SetActive(false);
+            if (weaponRefArray[i].GetComponent<WeaponInfo>().WeaponComponents != null)
+            {
+                weaponRefArray[i].GetComponent<WeaponInfo>().WeaponComponents.SetActive(false);
+            }
+            
             weaponRefArray[i].SetActive(false);
 
         }
@@ -81,7 +85,7 @@ public class ShopManager : MonoBehaviour {
 
     public void EnableEquipSlots()
     {
-        if(currentWeapon.tag == "Pistol")
+        if(currentWeapon.tag == "pistol")
         {
             if(equippedWeapons[0] == null || currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[0].GetComponent<WeaponInfo>().name)
             {

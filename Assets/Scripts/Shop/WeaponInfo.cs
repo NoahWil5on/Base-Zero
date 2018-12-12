@@ -33,11 +33,6 @@ public class WeaponInfo : MonoBehaviour {
     public int wepIndex;
     // Use this for initialization
     void Start () {
-        stockUpgrade.SetActive(false);
-
-        scopeUpgrade.SetActive(false);
-        barrelUpgrade.SetActive(false);
-        magazineUpgrade.SetActive(false);
     }
 	
 	// Update is called once per frame

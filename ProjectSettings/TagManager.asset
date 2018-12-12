@@ -28,6 +28,7 @@ TagManager:
   - TrainyardtoHQ
   - scopeImage
   - wp
+  - pistol
   layers:
   - Default
   - TransparentFX
