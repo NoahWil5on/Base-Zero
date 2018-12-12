@@ -23789,8 +23789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7abeee484213e9409c08dd9a1ca2e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1192683860}
-  gameManager: {fileID: 1103410095}
   healthUIText: {fileID: 1440118654}
   ammoUIText: {fileID: 636264594}
   resourceMenuBackground: {fileID: 1630321163}
@@ -33357,11 +33355,6 @@ Transform:
   m_Father: {fileID: 1239074844}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 90, y: -180, z: 0}
---- !u!1 &1192683860 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1721608805}
 --- !u!1001 &1194011756
 Prefab:
   m_ObjectHideFlags: 0
@@ -46455,17 +46448,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114213922015983404, guid: 5e9e851c0e142814dac026a256ba2ac0,
-        type: 2}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 1103410095}
     - target: {fileID: 114684210163759618, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1103410095}
-    - target: {fileID: 114217077265829522, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    - target: {fileID: 114213922015983404, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}
       propertyPath: gameManager
       value: 

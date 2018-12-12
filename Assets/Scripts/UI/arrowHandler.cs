@@ -25,14 +25,14 @@ public class arrowHandler : MonoBehaviour
 
     void Update()
     {
-        return;
+        
         //if (flag)
         //{
             onObjectiveChange();
         //    flag = false;
         //}
 
-        Debug.Log(goTarget.name);
+        goTarget = GameObject.FindGameObjectWithTag("Heli2");
         Vector3 tmpVec = controller.transform.InverseTransformPoint(goTarget.transform.position);
 
         float angtoTar = Mathf.Atan2(tmpVec.x, tmpVec.z) * Mathf.Rad2Deg;
@@ -44,7 +44,7 @@ public class arrowHandler : MonoBehaviour
         Scene curScene = SceneManager.GetActiveScene();
         string sceneName = curScene.name;
 
-        if (sceneName == "KareemHunt")
+        if (sceneName == "HQTEST")
         {
             if (qm.sendCurQuestLocation() == "HQ")
             {

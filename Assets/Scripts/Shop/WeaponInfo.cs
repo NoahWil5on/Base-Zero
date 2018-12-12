@@ -18,6 +18,7 @@ public class WeaponInfo : MonoBehaviour {
     public GameObject scopeButton;
     public GameObject barrelButton;
     public GameObject magazineButton;
+    public GameObject WeaponComponents;
     public bool stockUpgraded = false;
     public bool scopeUpgraded = false;
     public bool barrelUpgraded = false;
@@ -29,9 +30,11 @@ public class WeaponInfo : MonoBehaviour {
     public int weaponCost = 1200;
     public bool purchased = false;
     public string name;
+    public int wepIndex;
     // Use this for initialization
     void Start () {
         stockUpgrade.SetActive(false);
+
         scopeUpgrade.SetActive(false);
         barrelUpgrade.SetActive(false);
         magazineUpgrade.SetActive(false);

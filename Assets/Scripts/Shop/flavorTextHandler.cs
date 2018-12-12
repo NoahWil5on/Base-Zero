@@ -18,7 +18,6 @@ public class flavorTextHandler : MonoBehaviour {
 
     public GameObject akRef;
     public GameObject m4Ref;
-    public GameObject battleRifleRef;
 
     // Use this for initialization
     void Start () {
@@ -62,19 +61,6 @@ public class flavorTextHandler : MonoBehaviour {
             magSizeText.text = "30";
 
             flavorText.text = "The M4 carbine is one of the most reliable and field-tested rifles out there. Trust it.";
-        }
-        else if (battleRifleRef.activeSelf == true)
-        {
-            background.SetActive(true);
-            statHeaders.SetActive(true);
-
-            damageText.text = "60";
-            fireRateText.text = "Low";
-            accuracyText.text = "40";
-            recoilText.text = "Low";
-            magSizeText.text = "20";
-
-            flavorText.text = "This FAL battle rifle is used by UN forces around the globe. High impact firing mechanism combined with a high caliber makes this rifle strong.";
         }
         else
         {

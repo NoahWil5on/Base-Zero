@@ -81,7 +81,22 @@ ModelImporter:
     4300020: Rifle_Scope_Sniper
     4300022: Magazine_Marksman
     4300024: Tape
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AR_Platform_Accesories_mat
+    second: {fileID: 2100002, guid: 5ca7b09757588ea4c9337ea80b29ab7a, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AR_Platform_Body_mat
+    second: {fileID: 2100000, guid: 4908aa16517e63c47977d42a518f6780, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AR_Platform_Guards_mat
+    second: {fileID: 2100000, guid: a0059cdb0fd084a44bbc697f88dc1144, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
