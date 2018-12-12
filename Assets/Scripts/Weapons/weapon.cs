@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.UI;
 
+
 public class weapon : MonoBehaviour
 {
 
@@ -58,6 +59,16 @@ public class weapon : MonoBehaviour
     {
         if(currentAmmoCount > magSize) currentAmmoCount = magSize;
         gameManager = GameObject.FindGameObjectWithTag("gm");
+/*
+        ShopWeapon myWeapon;
+        for(int i = 0; i < gameManager.weapons.length; i++){
+            if(gameManager.weapons[i].name == this.gameObject.name){
+                myWeapon = gameManager.weapons[i];
+                break;
+            }
+        }
+        myUpgrades = myWeapon.upgrades;
+*/
         GameObject[] scopeImages = GameObject.FindGameObjectsWithTag("scopeImage");
         for(int i = 0; i < scopeImages.Length; i++){
             if(scopeImages[i].name == scopeName){
