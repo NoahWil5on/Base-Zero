@@ -74,7 +74,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cargo_Container_mat
-    second: {fileID: 2100000, guid: 86f57d727bcd66c428b44fd7d58e403d, type: 2}
+    second: {fileID: 2100000, guid: 885ede31d3cce134c8a46aad09eba356, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

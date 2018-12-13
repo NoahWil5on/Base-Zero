@@ -71,6 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4161193985671682}
   - component: {fileID: 65528858679048632}
+  - component: {fileID: 208469516028607518}
   m_Layer: 0
   m_Name: Deuce_Truck
   m_TagString: Untagged
@@ -386,8 +387,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092871722580518}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 199.6531, y: 3.3221965, z: 320.17932}
+  m_LocalRotation: {x: -0, y: -0.7257615, z: -0, w: 0.6879465}
+  m_LocalPosition: {x: 453.26468, y: 0.17198753, z: -94.29364}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4511272610389370}
@@ -412,7 +413,7 @@ Transform:
   - {fileID: 4706705112431022}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -93.064, z: 0}
 --- !u!4 &4184706939719182
 Transform:
   m_ObjectHideFlags: 1
@@ -1512,3 +1513,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.9243774, y: 6.3890533, z: 15.640289}
   m_Center: {x: 0.03555298, y: -0.022960663, z: 0.027938843}
+--- !u!208 &208469516028607518
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1092871722580518}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

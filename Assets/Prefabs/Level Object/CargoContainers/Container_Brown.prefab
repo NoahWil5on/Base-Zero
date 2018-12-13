@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 33501517442274710}
   - component: {fileID: 23979481721366020}
   - component: {fileID: 65676034956528908}
+  - component: {fileID: 208235334206140480}
   m_Layer: 0
   m_Name: Container_Brown
   m_TagString: Untagged
@@ -404,7 +405,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1236672191274860}
   m_LocalRotation: {x: -0, y: 0.7017392, z: -0, w: 0.712434}
-  m_LocalPosition: {x: 346.40878, y: 3.9566116, z: 240.29}
+  m_LocalPosition: {x: -3.1797485, y: 4.34, z: 6.307556}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4796501441903490}
@@ -972,3 +973,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8.880002, y: 9.34, z: 22.156252}
   m_Center: {x: 0, y: 0, z: 0.040122997}
+--- !u!208 &208235334206140480
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236672191274860}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.44, y: 4.67, z: 11.078}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.040000003}
+  m_TimeToStationary: 0.5

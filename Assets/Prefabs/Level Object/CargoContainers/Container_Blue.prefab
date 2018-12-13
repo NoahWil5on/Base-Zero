@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 33802165824170178}
   - component: {fileID: 23186535756848784}
   - component: {fileID: 65802061399766516}
+  - component: {fileID: 208272234931013358}
   m_Layer: 0
   m_Name: Container_Blue
   m_TagString: Untagged
@@ -265,8 +266,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1497107694843252}
-  m_LocalRotation: {x: -0, y: -0.7438097, z: -0, w: 0.66839147}
-  m_LocalPosition: {x: 348.41, y: 13.24, z: 238.97}
+  m_LocalRotation: {x: -0.102536544, y: -0.73500514, z: 0.11410631, w: 0.6604798}
+  m_LocalPosition: {x: -13.9, y: -0.26, z: -6.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4510554404769042}
@@ -275,7 +276,7 @@ Transform:
   - {fileID: 4725072840982784}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -96.114006, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.8500001, y: -95.828, z: 17.555}
 --- !u!4 &4442881122831102
 Transform:
   m_ObjectHideFlags: 1
@@ -972,3 +973,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8.88, y: 9.34, z: 22.156467}
   m_Center: {x: 0, y: 0, z: 0.040233135}
+--- !u!208 &208272234931013358
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1497107694843252}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.44, y: 4.67, z: 11.078}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.040000003}
+  m_TimeToStationary: 0.5

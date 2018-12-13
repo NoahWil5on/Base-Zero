@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 33454799945341378}
   - component: {fileID: 23363505678588580}
   - component: {fileID: 65297760154241100}
+  - component: {fileID: 208503761820815368}
   m_Layer: 0
   m_Name: Container_Green
   m_TagString: Untagged
@@ -389,7 +390,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1405484758281400}
   m_LocalRotation: {x: -0, y: -0.7134165, z: -0, w: 0.7007402}
-  m_LocalPosition: {x: 344.67, y: 22.95, z: 209.97}
+  m_LocalPosition: {x: -4.918518, y: 14.145123, z: -24.012436}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4216065392973824}
@@ -972,3 +973,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8.879999, y: 9.34, z: 22.156263}
   m_Center: {x: 0, y: 0, z: 0.04013252}
+--- !u!208 &208503761820815368
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405484758281400}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.44, y: 4.67, z: 11.078}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.040000003}
+  m_TimeToStationary: 0.5
